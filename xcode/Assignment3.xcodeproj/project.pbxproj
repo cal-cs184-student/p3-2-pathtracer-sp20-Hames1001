@@ -1,0 +1,1920 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		6685FBE237CC4E259594B836 /* uninstall */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = DD156C0FBA9545CF97C977E3 /* Build configuration list for PBXAggregateTarget "uninstall" */;
+			buildPhases = (
+				03F5C0F7677D44B69F2B8549 /* CMake Rules */,
+			);
+			dependencies = (
+			);
+			name = uninstall;
+			productName = uninstall;
+		};
+		694A33C4E46E4DD6901B61E4 /* ALL_BUILD */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 2EABFE771E2D4C72A4161865 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+			buildPhases = (
+				9FEA5EA50F194B88BDB72779 /* CMake Rules */,
+			);
+			dependencies = (
+				8F2415D5829D4D85AE9E3AED /* PBXTargetDependency */,
+				F0C933BE57864490AA8220A4 /* PBXTargetDependency */,
+				595C63B9F8894C208D446DC6 /* PBXTargetDependency */,
+				E162A5B6476B4EFE911A54B0 /* PBXTargetDependency */,
+				A438BDFA61D24AEDB5B9BC0E /* PBXTargetDependency */,
+			);
+			name = ALL_BUILD;
+			productName = ALL_BUILD;
+		};
+		BBC3CAA69C5944869D8FE196 /* ZERO_CHECK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = F1C63F26EB14479482BB811B /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+			buildPhases = (
+				98411A9C240946179E69F984 /* CMake Rules */,
+			);
+			dependencies = (
+			);
+			name = ZERO_CHECK;
+			productName = ZERO_CHECK;
+		};
+		D83B7747D76C40F39608E7DB /* install */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = B9BE7EBA0F10472C8F25C85B /* Build configuration list for PBXAggregateTarget "install" */;
+			buildPhases = (
+				BC5F92AA946A4CD497751274 /* CMake PostBuild Rules */,
+			);
+			dependencies = (
+				FD271F0B8E4C40E6A5534389 /* PBXTargetDependency */,
+			);
+			name = install;
+			productName = install;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		02B03A14C09F471ABF8EF2B3 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/scene/gl_scene/area_light.h */ = {isa = PBXBuildFile; fileRef = 2EE906DB613D4F7488759577 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/scene/gl_scene/area_light.h */; };
+		04534462F651482692057985 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/scene/collada/sphere_info.cpp */ = {isa = PBXBuildFile; fileRef = DE2F87604D434827840AF8C8 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/scene/collada/sphere_info.cpp */; };
+		08F95335C5C74AC2BE0C3246 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/src/osdfont.cpp */ = {isa = PBXBuildFile; fileRef = E31FACB3DF914FE38E9B6984 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/src/osdfont.cpp */; };
+		0AA48FDA988544DD991D7436 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/scene/gl_scene/material.h */ = {isa = PBXBuildFile; fileRef = 3D821C62095E416192795483 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/scene/gl_scene/material.h */; };
+		0B7E4C2CB5914E2ABF9CFBD2 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/scene/primitive.h */ = {isa = PBXBuildFile; fileRef = AE9640A35C184BFAAF75F6D1 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/scene/primitive.h */; };
+		0D66765807A64E98A1D54799 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/scene/collada/collada.cpp */ = {isa = PBXBuildFile; fileRef = 33DE9656BD854F7BB94F00B6 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/scene/collada/collada.cpp */; };
+		10C46ED870464B67BC43D8CB /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/pathtracer/raytraced_renderer.cpp */ = {isa = PBXBuildFile; fileRef = CE930A30559F423CBE254DFB /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/pathtracer/raytraced_renderer.cpp */; };
+		1263D7282B644CB8AF57BF32 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/src/lodepng.cpp */ = {isa = PBXBuildFile; fileRef = D9D3D649CB204CF4AB914F9E /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/src/lodepng.cpp */; };
+		13E9372D9E76444A801C04E5 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/src/matrix3x3.cpp */ = {isa = PBXBuildFile; fileRef = 0F27CFFF8DD741A3AB22A499 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/src/matrix3x3.cpp */; };
+		15F3BBCEA01647B6BA454863 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/application/renderer.h */ = {isa = PBXBuildFile; fileRef = 5E24AB04CB034E72BAC91680 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/application/renderer.h */; };
+		193FC07318F742218A075CEF /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/util/halfEdgeMesh.cpp */ = {isa = PBXBuildFile; fileRef = EDCE05E96D2B469CB98A0577 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/util/halfEdgeMesh.cpp */; };
+		1B237E3B7EDD464FB5F31A6E /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/deps/glfw/src/mappings.h */ = {isa = PBXBuildFile; fileRef = DCF3975073CE43A78071593E /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/deps/glfw/src/mappings.h */; };
+		1F19B7D84CC24A798225FAC7 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/pathtracer/bsdf.h */ = {isa = PBXBuildFile; fileRef = 9911F1D3B99447E69671DF10 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/pathtracer/bsdf.h */; };
+		23775A278D8A43318E6594E7 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/pathtracer/raytraced_renderer.h */ = {isa = PBXBuildFile; fileRef = 3202EA084CFB48499BDBDA1E /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/pathtracer/raytraced_renderer.h */; };
+		239956D85C944345A538084B /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/deps/glfw/src/posix_thread.h */ = {isa = PBXBuildFile; fileRef = 531CEB71954540758E11518C /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/deps/glfw/src/posix_thread.h */; };
+		2C8FCA37B2EC4BEA92323BBD /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/scene/collada/material_info.h */ = {isa = PBXBuildFile; fileRef = 6D1D3F7246464A0BBBB84471 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/scene/collada/material_info.h */; };
+		2DBBB6DC3EBD463FB1412944 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/deps/glew/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 0A0FC1696688408EB5DFEA11 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/deps/glew/CMakeLists.txt */; };
+		32CE1720A25741FB81C3C46A /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/deps/glfw/src/egl_context.h */ = {isa = PBXBuildFile; fileRef = 940FC37601F84055A2130B0D /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/deps/glfw/src/egl_context.h */; };
+		333CBC2017F440E6901AE909 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/scene/gl_scene/sphere.cpp */ = {isa = PBXBuildFile; fileRef = 9CD309C9D4D84EBD99E4D507 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/scene/gl_scene/sphere.cpp */; };
+		39765A99B2474788AFBD68B5 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 964D5A568EFA4064B76F2660 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CMakeLists.txt */; };
+		3AB6C46D2D9D46679C2767C0 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/deps/glfw/src/cocoa_joystick.h */ = {isa = PBXBuildFile; fileRef = 76BA8D7FC33441458177B3C1 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/deps/glfw/src/cocoa_joystick.h */; };
+		3C122E6B89114440AEECA81F /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/deps/glfw/src/osmesa_context.h */ = {isa = PBXBuildFile; fileRef = 4BC2CFB9C5474B82A2D5F158 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/deps/glfw/src/osmesa_context.h */; };
+		416EA005CEED4D78A14BDA34 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/util/lodepng.cpp */ = {isa = PBXBuildFile; fileRef = 2B29366887034083BAAA5A62 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/util/lodepng.cpp */; };
+		42BD6336CD394AEF801D61CB /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/deps/glfw/src/monitor.c */ = {isa = PBXBuildFile; fileRef = F6972F5FF1E640F4849DDB30 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/deps/glfw/src/monitor.c */; settings = {COMPILER_FLAGS = "-Wdeclaration-after-statement"; }; };
+		449F0AFC243C449F90346287 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/scene/scene.h */ = {isa = PBXBuildFile; fileRef = CD6D4825B644436FAE2D2B89 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/scene/scene.h */; };
+		46D095C9DE4B48D19A15C93E /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/scene/bbox.h */ = {isa = PBXBuildFile; fileRef = 72FEE4DF1C954B6D85D90C6D /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/scene/bbox.h */; };
+		47FF854EBBA04905AE758599 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/deps/glfw/src/cocoa_platform.h */ = {isa = PBXBuildFile; fileRef = 8F5D508316754FABB65A7378 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/deps/glfw/src/cocoa_platform.h */; };
+		4917B8F5B4AB4CA2B4241F32 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/deps/glew/src/glewinfo.c */ = {isa = PBXBuildFile; fileRef = 15E5D3B325824B558A593B5B /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/deps/glew/src/glewinfo.c */; };
+		4C569FE8387F4199A43F69D4 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/deps/glfw/src/context.c */ = {isa = PBXBuildFile; fileRef = DFE007091B8A4D45B8FCD5CC /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/deps/glfw/src/context.c */; settings = {COMPILER_FLAGS = "-Wdeclaration-after-statement"; }; };
+		4FA11493206E45C1AE4D07EC /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/util/sphere_drawing.cpp */ = {isa = PBXBuildFile; fileRef = 205FD726A83E47C3B7BD95D8 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/util/sphere_drawing.cpp */; };
+		51718F8D1BB84DB5BC1EEF78 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/deps/glfw/src/cocoa_window.m */ = {isa = PBXBuildFile; fileRef = 9B8F2A2085B14FE9825F5BFD /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/deps/glfw/src/cocoa_window.m */; };
+		53CCB45344BD4B2E9250564E /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/deps/glfw/src/cocoa_monitor.m */ = {isa = PBXBuildFile; fileRef = 4F5FE89B36D14EA4A1F5D6EF /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/deps/glfw/src/cocoa_monitor.m */; };
+		55EF68B5FC9F483FB78DC558 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/deps/glfw/src/cocoa_time.c */ = {isa = PBXBuildFile; fileRef = 59056F07CA05458290D2B2C8 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/deps/glfw/src/cocoa_time.c */; };
+		5654F5FDC4E640AEA00C68BD /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/src/path.cpp */ = {isa = PBXBuildFile; fileRef = B2BE2E9539ED41039BE2C935 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/src/path.cpp */; };
+		589BA0F34F694E818AA44C93 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/scene/gl_scene/mesh.h */ = {isa = PBXBuildFile; fileRef = 8344607DD99D465ABDEDA293 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/scene/gl_scene/mesh.h */; };
+		5E0332B2FFF54C3FAE692E49 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/util/sphere_drawing.h */ = {isa = PBXBuildFile; fileRef = D506B4AF314F4F189A6E5EE0 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/util/sphere_drawing.h */; };
+		5F1EC8ABB7A144B4AB1F8FB4 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/pathtracer/sampler.h */ = {isa = PBXBuildFile; fileRef = 248DF64950CD4B158463868D /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/pathtracer/sampler.h */; };
+		61A1CCC794AF492EA6BD5B7A /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/src/vector2D.cpp */ = {isa = PBXBuildFile; fileRef = 85FB9ACFA1A44DD7A6E93719 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/src/vector2D.cpp */; };
+		62F9C580ED204EE2AC15C5A2 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/deps/glfw/src/egl_context.c */ = {isa = PBXBuildFile; fileRef = 68490E3D5FD9419A9963B892 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/deps/glfw/src/egl_context.c */; settings = {COMPILER_FLAGS = "-Wdeclaration-after-statement"; }; };
+		64DB1F41089D4D4AB6F5C231 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/pathtracer/camera_lens.cpp */ = {isa = PBXBuildFile; fileRef = 1D95306AFDE041C3B2BDCFF5 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/pathtracer/camera_lens.cpp */; };
+		660D599A77B24BAF9374121F /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/deps/glfw/src/posix_thread.c */ = {isa = PBXBuildFile; fileRef = 56425FE0A9914C7EA8C83258 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/deps/glfw/src/posix_thread.c */; };
+		678EC697328748B7A758C033 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/src/spectrum.cpp */ = {isa = PBXBuildFile; fileRef = AEDEFEFD18EA419EA372BD72 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/src/spectrum.cpp */; };
+		6AF3C4AB935E45D6845B409D /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/src/quaternion.cpp */ = {isa = PBXBuildFile; fileRef = 076EECC2BB944C9A918693DA /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/src/quaternion.cpp */; };
+		6B4770A8CDC54066AC09A8AF /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/src/tinyxml2.cpp */ = {isa = PBXBuildFile; fileRef = 0975CB87AD4E4CDC8DAFD27C /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/src/tinyxml2.cpp */; };
+		6BF720768FB84797BA917C66 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/application/meshEdit.h */ = {isa = PBXBuildFile; fileRef = 627E7BD3A95E4BC8B91B40AF /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/application/meshEdit.h */; };
+		6D8C45577CAE4FD4A357C245 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/util/mutablePriorityQueue.h */ = {isa = PBXBuildFile; fileRef = 9A3C97B57DEE471D89BE7858 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/util/mutablePriorityQueue.h */; };
+		70A398FA353B445FB110DA2D /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/src/base64.cpp */ = {isa = PBXBuildFile; fileRef = 2A295AC881804F66A3662286 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/src/base64.cpp */; };
+		70EE7B416A1849DF9822491F /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/scene/collada/camera_info.h */ = {isa = PBXBuildFile; fileRef = 65E8D3CC79364BB2A73F4525 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/scene/collada/camera_info.h */; };
+		7191E9E299EA4759BE301FC3 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/deps/glfw/src/nsgl_context.m */ = {isa = PBXBuildFile; fileRef = DC3C604ABBD34CCB8B04EC1B /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/deps/glfw/src/nsgl_context.m */; };
+		77663B011C5E4AF6BC49FFB1 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/util/work_queue.h */ = {isa = PBXBuildFile; fileRef = 89071C5617F84138B42E5562 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/util/work_queue.h */; };
+		789C3BBB73EC49E6BAFB9268 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/pathtracer/sampler.cpp */ = {isa = PBXBuildFile; fileRef = 8701727E82E14B9182544190 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/pathtracer/sampler.cpp */; };
+		7DBDA574DCEE4C5B8AAA5326 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/util/random_util.h */ = {isa = PBXBuildFile; fileRef = 3AA2814A872D44A6A347368D /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/util/random_util.h */; };
+		7DFE69D715254EF09BDF6335 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/application/application.h */ = {isa = PBXBuildFile; fileRef = E2922307A3B944E8B1BF3858 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/application/application.h */; };
+		7F28AF6872624CC1A531F080 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/scene/collada/collada.h */ = {isa = PBXBuildFile; fileRef = 2822B82DA681469DAB32FBB4 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/scene/collada/collada.h */; };
+		81BA33CA5EF64D63BFE14ED1 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/scene/gl_scene/scene.h */ = {isa = PBXBuildFile; fileRef = E9ED7FEAB7A743B0A9ED9034 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/scene/gl_scene/scene.h */; };
+		84FD1A9F8D304A3E9473CF80 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/scene/collada/polymesh_info.h */ = {isa = PBXBuildFile; fileRef = F2B321D8E54E42A49AD3D606 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/scene/collada/polymesh_info.h */; };
+		89792DD9C9784E338C312BF2 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/scene/gl_scene/point_light.h */ = {isa = PBXBuildFile; fileRef = 575625BBABF943C78A553CFB /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/scene/gl_scene/point_light.h */; };
+		8BB538C1AA8745FCB7CDD4C4 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/deps/glfw/src/nsgl_context.h */ = {isa = PBXBuildFile; fileRef = 1411FC8DD6544DCC93521FF7 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/deps/glfw/src/nsgl_context.h */; };
+		8BD022667FBC435CA1F41317 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/src/vector3D.cpp */ = {isa = PBXBuildFile; fileRef = 28A8836D232F4A2DA7D28870 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/src/vector3D.cpp */; };
+		8C022530C1F34B3E8538F49D /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/deps/glfw/src/cocoa_joystick.m */ = {isa = PBXBuildFile; fileRef = FF864452D0A1406D83B8013A /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/deps/glfw/src/cocoa_joystick.m */; };
+		8C2C7065CC644BBD9A5C242E /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/application/application.cpp */ = {isa = PBXBuildFile; fileRef = 07932E923B904D139387618D /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/application/application.cpp */; };
+		8D0A9606F4F84FB7BA33945B /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/scene/collada/sphere_info.h */ = {isa = PBXBuildFile; fileRef = 7ADBF2B81A06410BBB065576 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/scene/collada/sphere_info.h */; };
+		91D5FC152E9042228C5B8BBD /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/scene/bvh.h */ = {isa = PBXBuildFile; fileRef = A56F512C0C8A412988614480 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/scene/bvh.h */; };
+		9469085A242E40508CE6615E /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/xcode/CGL/deps/glfw/src/glfw_config.h */ = {isa = PBXBuildFile; fileRef = A77A08C978C041EEAC9692CD /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/xcode/CGL/deps/glfw/src/glfw_config.h */; };
+		993EDD3C7EC9446E918ED6C2 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/scene/object.cpp */ = {isa = PBXBuildFile; fileRef = 06084DED70F241F2BA4044C1 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/scene/object.cpp */; };
+		9BD84DACE8D9406CA5E24B62 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 1284CC18B32A44149B337271 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/CMakeLists.txt */; };
+		9DE6FBB3A47F44468E13A971 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/deps/glfw/src/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 36A33E94CEBE463090BAF6E3 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/deps/glfw/src/CMakeLists.txt */; };
+		9EAF21C3DDDD4FDCBD403FD4 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/scene/gl_scene/draw_style.h */ = {isa = PBXBuildFile; fileRef = 6898F330F409491B82C92936 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/scene/gl_scene/draw_style.h */; };
+		9F10F0398B844186B0FF5F3D /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/application/meshEdit.cpp */ = {isa = PBXBuildFile; fileRef = 8D95E5E46FF34EDCAC4EF5B2 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/application/meshEdit.cpp */; };
+		9FCACE0DBB4442C08E8C2155 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/scene/gl_scene/environment_light.h */ = {isa = PBXBuildFile; fileRef = 4993A46C68654EFBB06B5126 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/scene/gl_scene/environment_light.h */; };
+		A0177EAEB4F84B70AD11FE98 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/scene/sphere.h */ = {isa = PBXBuildFile; fileRef = A297EACA64A648B1B87D7AEC /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/scene/sphere.h */; };
+		A051F250E0094680A6C601A3 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/pathtracer/intersection.h */ = {isa = PBXBuildFile; fileRef = 99542362FE6D4A398BF6CC50 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/pathtracer/intersection.h */; };
+		A2EFB85970FE460E98E09DE2 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/scene/environment_light.h */ = {isa = PBXBuildFile; fileRef = BBFEDC2943D240E58C911FCD /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/scene/environment_light.h */; };
+		A36005CB29824276BA89FF96 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/deps/glfw/src/input.c */ = {isa = PBXBuildFile; fileRef = 7EA57E29EE2542969A3CD883 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/deps/glfw/src/input.c */; settings = {COMPILER_FLAGS = "-Wdeclaration-after-statement"; }; };
+		A6C2568EDEA043B1A98E2865 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/scene/gl_scene/scene.cpp */ = {isa = PBXBuildFile; fileRef = F327D686751A443F8011D657 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/scene/gl_scene/scene.cpp */; };
+		A9074436B4BE4F15832A6916 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/pathtracer/ray.h */ = {isa = PBXBuildFile; fileRef = 8B9D7E253D714E5D8C3A9CE2 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/pathtracer/ray.h */; };
+		A9CE5CAA899349B89AD000B9 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/src/osdtext.cpp */ = {isa = PBXBuildFile; fileRef = A2059E836B24400DB0527463 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/src/osdtext.cpp */; };
+		AC331BF709F24F11B030CBBE /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/deps/glfw/src/internal.h */ = {isa = PBXBuildFile; fileRef = 00A38F1E96014D689690652E /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/deps/glfw/src/internal.h */; };
+		AE34E44F1E604E0A89C7FD33 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/deps/glfw/include/GLFW/glfw3native.h */ = {isa = PBXBuildFile; fileRef = BDDFDA4E790C4D54914789A6 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/deps/glfw/include/GLFW/glfw3native.h */; };
+		AFB7B4DF17574F32BE7DF98F /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/scene/object.h */ = {isa = PBXBuildFile; fileRef = E820DD49F0164213B6480F19 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/scene/object.h */; };
+		B077CCF0E5184A4BB23B4A73 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/scene/gl_scene/mesh_view.h */ = {isa = PBXBuildFile; fileRef = 3E40E12102184848B0F1CE9C /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/scene/gl_scene/mesh_view.h */; };
+		B1DED992AA17441EAF23469C /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/util/image.h */ = {isa = PBXBuildFile; fileRef = A01326CF5B79462884708992 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/util/image.h */; };
+		B3BA06B812DE41D4BEAB5546 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/pathtracer/pathtracer.h */ = {isa = PBXBuildFile; fileRef = A3BEECE835FA4CB28DDB841F /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/pathtracer/pathtracer.h */; };
+		B52DE3130B1F466DB89F4EE2 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/scene/collada/light_info.cpp */ = {isa = PBXBuildFile; fileRef = DAC2EF625A2A4694BE8D8A46 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/scene/collada/light_info.cpp */; };
+		C53278EFEE654FE896000A22 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/deps/glfw/src/vulkan.c */ = {isa = PBXBuildFile; fileRef = 8623F456C4D1452F99C499A6 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/deps/glfw/src/vulkan.c */; settings = {COMPILER_FLAGS = "-Wdeclaration-after-statement"; }; };
+		CCBA667A152047F88CF8F0A3 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/scene/environment_light.cpp */ = {isa = PBXBuildFile; fileRef = D8D6D7E82CAF4EA2A6F16C4F /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/scene/environment_light.cpp */; };
+		CE7B7266DDFB45269EA2F624 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/scene/gl_scene/ambient_light.h */ = {isa = PBXBuildFile; fileRef = 46035AECE6DF4B2DB8CF2ECA /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/scene/gl_scene/ambient_light.h */; };
+		D007AAB93E0B4008B05F696D /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/scene/gl_scene/mesh.cpp */ = {isa = PBXBuildFile; fileRef = 81F51D0094EE400FBF11BB77 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/scene/gl_scene/mesh.cpp */; };
+		D025EE6745CC40AB9EF088E4 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/scene/gl_scene/spot_light.h */ = {isa = PBXBuildFile; fileRef = 45CA3C52250C45BF9BA8F00E /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/scene/gl_scene/spot_light.h */; };
+		D0D5232828154D39AE3B94E1 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/src/vector4D.cpp */ = {isa = PBXBuildFile; fileRef = C9BFDFA55D3049C4970FFB4C /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/src/vector4D.cpp */; };
+		D606522503994F4FB77BBC38 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/scene/gl_scene/sphere.h */ = {isa = PBXBuildFile; fileRef = 695EE330D59B49088E2F94FC /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/scene/gl_scene/sphere.h */; };
+		D633097F91044E388DEAD4E9 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/src/viewer.cpp */ = {isa = PBXBuildFile; fileRef = 3BD9887F864A4ADAAFF106E0 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/src/viewer.cpp */; };
+		DAE789E979744647A4C228B5 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/util/halfEdgeMesh.h */ = {isa = PBXBuildFile; fileRef = 1396BC0B9287448CB9E3DBB6 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/util/halfEdgeMesh.h */; };
+		DAE8A5A96B62416BA77F7A92 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/deps/glfw/src/init.c */ = {isa = PBXBuildFile; fileRef = 081B2756473146528D4DFBA8 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/deps/glfw/src/init.c */; settings = {COMPILER_FLAGS = "-Wdeclaration-after-statement"; }; };
+		DD8F005FC58748E4BD99EA07 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/scene/collada/material_info.cpp */ = {isa = PBXBuildFile; fileRef = 42A16029165E4D0290BB1295 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/scene/collada/material_info.cpp */; };
+		DE701700E7A74C0BA643C8EF /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/deps/glfw/include/GLFW/glfw3.h */ = {isa = PBXBuildFile; fileRef = 06BEF1330A234787BA5A6834 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/deps/glfw/include/GLFW/glfw3.h */; };
+		E1B940A8C43B4FFA9DB711D6 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/pathtracer/advanced_bsdf.cpp */ = {isa = PBXBuildFile; fileRef = C0AE84864EE74577B8E5C3B7 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/pathtracer/advanced_bsdf.cpp */; };
+		E2D5F1716E2B46F9A076DAF0 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/src/complex.cpp */ = {isa = PBXBuildFile; fileRef = 3F8A9BE4C0AF486494C60972 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/src/complex.cpp */; };
+		E311622ED6324BACAFC108DC /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/pathtracer/camera.h */ = {isa = PBXBuildFile; fileRef = 8E060DA85F5243E0AE087708 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/pathtracer/camera.h */; };
+		E53C719B3F2A4D46AA4EAFE1 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/scene/collada/polymesh_info.cpp */ = {isa = PBXBuildFile; fileRef = 45C38ADF47D3472F825597EF /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/scene/collada/polymesh_info.cpp */; };
+		E68B593A27434E78847DDDB5 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/scene/gl_scene/directional_light.h */ = {isa = PBXBuildFile; fileRef = 78FBEC0000E1475F86A59486 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/scene/gl_scene/directional_light.h */; };
+		EA6AECD7D22E41EDA36ED9B6 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/deps/glfw/src/osmesa_context.c */ = {isa = PBXBuildFile; fileRef = 0A99199DBD404527A379ECC1 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/deps/glfw/src/osmesa_context.c */; settings = {COMPILER_FLAGS = "-Wdeclaration-after-statement"; }; };
+		ECCE440D7D854D808113D24E /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/src/color.cpp */ = {isa = PBXBuildFile; fileRef = 0D6FA7077B9440A5B3207665 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/src/color.cpp */; };
+		F13707ECBFAF4094B6874EB4 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/scene/light.h */ = {isa = PBXBuildFile; fileRef = 8831C6C9C40F4F5A9E5E00FD /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/scene/light.h */; };
+		F1E2A2137EEE4C9789E20028 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/scene/triangle.h */ = {isa = PBXBuildFile; fileRef = 484C12F5BB714613A60FC036 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/scene/triangle.h */; };
+		F212CC99BBE545D0A55BCA18 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/deps/glew/src/visualinfo.c */ = {isa = PBXBuildFile; fileRef = 29A2CDFF192D42D08725EC04 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/deps/glew/src/visualinfo.c */; };
+		F25A9BA6421F4EC795BA9587 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/scene/aggregate.h */ = {isa = PBXBuildFile; fileRef = E24AD54474B3450BACBD15E2 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/scene/aggregate.h */; };
+		F371599969CE478E87B3513B /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/src/matrix4x4.cpp */ = {isa = PBXBuildFile; fileRef = 90A3796EC3D9496B90355348 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/src/matrix4x4.cpp */; };
+		F45BCAC63931423CABD55962 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/util/lodepng.h */ = {isa = PBXBuildFile; fileRef = B815273EE16244E8BA2838B4 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/util/lodepng.h */; };
+		F4D0BDF1F0DF4DBAA29A8BC1 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/scene/collada/light_info.h */ = {isa = PBXBuildFile; fileRef = 97520116E3D6476CA1571F1F /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/scene/collada/light_info.h */; };
+		F817B668315B41F5AECD907F /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/scene/collada/camera_info.cpp */ = {isa = PBXBuildFile; fileRef = 817B90FDE5E04E4880C79ED6 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/scene/collada/camera_info.cpp */; };
+		F88C222F16144C94B3D0DA54 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/deps/glfw/src/cocoa_init.m */ = {isa = PBXBuildFile; fileRef = C34B164F469943C197CD45D8 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/deps/glfw/src/cocoa_init.m */; };
+		F94CC5965BEF4A0391D47885 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/application/main.cpp */ = {isa = PBXBuildFile; fileRef = CA61C5365D3A445FAAE0EE84 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/application/main.cpp */; };
+		FC179147407D4202BD5BEDBE /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/deps/glew/src/glew.c */ = {isa = PBXBuildFile; fileRef = EC5402269B9B46F388517776 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/deps/glew/src/glew.c */; };
+		FC210C23B01341009862564A /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/deps/glfw/src/window.c */ = {isa = PBXBuildFile; fileRef = 6830F565E3604AC489381306 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/deps/glfw/src/window.c */; settings = {COMPILER_FLAGS = "-Wdeclaration-after-statement"; }; };
+		FEED63B217FD4B6AB3AF29CD /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/scene/collada/collada_info.h */ = {isa = PBXBuildFile; fileRef = CA45FF09BFF7463BA5DA837A /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/scene/collada/collada_info.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildStyle section */
+		5F65629BC0844622B850C742 /* Debug */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Debug;
+		};
+		B0DEAAA26F6644239064ADA6 /* RelWithDebInfo */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = RelWithDebInfo;
+		};
+		BC7D35F51F7E4795B03B144E /* Release */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Release;
+		};
+		F709E715D8CA4D708DED1269 /* MinSizeRel */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = MinSizeRel;
+		};
+/* End PBXBuildStyle section */
+
+/* Begin PBXContainerItemProxy section */
+		15D1E842584C48C493E010F9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 85E16696156B40ECA1BE1315 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 09C843529CFD4F10BC2A2A4B;
+			remoteInfo = glfw;
+		};
+		2090BCF2938047E5A5B2F795 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 85E16696156B40ECA1BE1315 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 694A33C4E46E4DD6901B61E4;
+			remoteInfo = ALL_BUILD;
+		};
+		4458937F2C714259ADCD6BA6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 85E16696156B40ECA1BE1315 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A28190BFAD134F0C9BB516CD;
+			remoteInfo = glew;
+		};
+		5770E3A00D6948308CDC35D1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 85E16696156B40ECA1BE1315 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BBC3CAA69C5944869D8FE196;
+			remoteInfo = ZERO_CHECK;
+		};
+		5D7FE022427E431585C1EB19 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 85E16696156B40ECA1BE1315 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 09C843529CFD4F10BC2A2A4B;
+			remoteInfo = glfw;
+		};
+		729169548E404754AAECF8EB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 85E16696156B40ECA1BE1315 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A28190BFAD134F0C9BB516CD;
+			remoteInfo = glew;
+		};
+		9B4490B5816140F4AA5846FB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 85E16696156B40ECA1BE1315 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BBC3CAA69C5944869D8FE196;
+			remoteInfo = ZERO_CHECK;
+		};
+		CD24E2B5809E4BC2AEEEB4E6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 85E16696156B40ECA1BE1315 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A4A86342ED94471FAEEB089D;
+			remoteInfo = pathtracer;
+		};
+		D36D4486BCEF4ACE8C0E1F43 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 85E16696156B40ECA1BE1315 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5851918D80E348548B6BEB2E;
+			remoteInfo = CGL;
+		};
+		D45B68C8524D4C82B7EAD9CE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 85E16696156B40ECA1BE1315 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 09C843529CFD4F10BC2A2A4B;
+			remoteInfo = glfw;
+		};
+		E5B50B1890A94A4B855EB762 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 85E16696156B40ECA1BE1315 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A28190BFAD134F0C9BB516CD;
+			remoteInfo = glew;
+		};
+		FB6431BC47864D598BA75EB0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 85E16696156B40ECA1BE1315 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5851918D80E348548B6BEB2E;
+			remoteInfo = CGL;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00A38F1E96014D689690652E /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/deps/glfw/src/internal.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = internal.h; path = CGL/deps/glfw/src/internal.h; sourceTree = SOURCE_ROOT; };
+		06084DED70F241F2BA4044C1 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/scene/object.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = object.cpp; path = src/scene/object.cpp; sourceTree = SOURCE_ROOT; };
+		06BEF1330A234787BA5A6834 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/deps/glfw/include/GLFW/glfw3.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = glfw3.h; path = CGL/deps/glfw/include/GLFW/glfw3.h; sourceTree = SOURCE_ROOT; };
+		076EECC2BB944C9A918693DA /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/src/quaternion.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = quaternion.cpp; path = CGL/src/quaternion.cpp; sourceTree = SOURCE_ROOT; };
+		07932E923B904D139387618D /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/application/application.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = application.cpp; path = src/application/application.cpp; sourceTree = SOURCE_ROOT; };
+		081B2756473146528D4DFBA8 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/deps/glfw/src/init.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = init.c; path = CGL/deps/glfw/src/init.c; sourceTree = SOURCE_ROOT; };
+		0975CB87AD4E4CDC8DAFD27C /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/src/tinyxml2.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = tinyxml2.cpp; path = CGL/src/tinyxml2.cpp; sourceTree = SOURCE_ROOT; };
+		0A0FC1696688408EB5DFEA11 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/deps/glew/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CGL/deps/glew/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		0A99199DBD404527A379ECC1 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/deps/glfw/src/osmesa_context.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = osmesa_context.c; path = CGL/deps/glfw/src/osmesa_context.c; sourceTree = SOURCE_ROOT; };
+		0D6FA7077B9440A5B3207665 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/src/color.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = color.cpp; path = CGL/src/color.cpp; sourceTree = SOURCE_ROOT; };
+		0E191F4D39B24B62885E2682 /* glew */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libglew.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		0F27CFFF8DD741A3AB22A499 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/src/matrix3x3.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = matrix3x3.cpp; path = CGL/src/matrix3x3.cpp; sourceTree = SOURCE_ROOT; };
+		1284CC18B32A44149B337271 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CGL/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		1396BC0B9287448CB9E3DBB6 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/util/halfEdgeMesh.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = halfEdgeMesh.h; path = src/util/halfEdgeMesh.h; sourceTree = SOURCE_ROOT; };
+		1411FC8DD6544DCC93521FF7 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/deps/glfw/src/nsgl_context.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = nsgl_context.h; path = CGL/deps/glfw/src/nsgl_context.h; sourceTree = SOURCE_ROOT; };
+		15E5D3B325824B558A593B5B /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/deps/glew/src/glewinfo.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = glewinfo.c; path = CGL/deps/glew/src/glewinfo.c; sourceTree = SOURCE_ROOT; };
+		1D95306AFDE041C3B2BDCFF5 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/pathtracer/camera_lens.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = camera_lens.cpp; path = src/pathtracer/camera_lens.cpp; sourceTree = SOURCE_ROOT; };
+		205FD726A83E47C3B7BD95D8 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/util/sphere_drawing.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = sphere_drawing.cpp; path = src/util/sphere_drawing.cpp; sourceTree = SOURCE_ROOT; };
+		248DF64950CD4B158463868D /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/pathtracer/sampler.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = sampler.h; path = src/pathtracer/sampler.h; sourceTree = SOURCE_ROOT; };
+		2822B82DA681469DAB32FBB4 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/scene/collada/collada.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = collada.h; path = src/scene/collada/collada.h; sourceTree = SOURCE_ROOT; };
+		28A8836D232F4A2DA7D28870 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/src/vector3D.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = vector3D.cpp; path = CGL/src/vector3D.cpp; sourceTree = SOURCE_ROOT; };
+		29A2CDFF192D42D08725EC04 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/deps/glew/src/visualinfo.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = visualinfo.c; path = CGL/deps/glew/src/visualinfo.c; sourceTree = SOURCE_ROOT; };
+		2A295AC881804F66A3662286 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/src/base64.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = base64.cpp; path = CGL/src/base64.cpp; sourceTree = SOURCE_ROOT; };
+		2A3C80EC577C4CA9A2F78525 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		2B29366887034083BAAA5A62 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/util/lodepng.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = lodepng.cpp; path = src/util/lodepng.cpp; sourceTree = SOURCE_ROOT; };
+		2EE906DB613D4F7488759577 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/scene/gl_scene/area_light.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = area_light.h; path = src/scene/gl_scene/area_light.h; sourceTree = SOURCE_ROOT; };
+		3202EA084CFB48499BDBDA1E /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/pathtracer/raytraced_renderer.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = raytraced_renderer.h; path = src/pathtracer/raytraced_renderer.h; sourceTree = SOURCE_ROOT; };
+		33DE9656BD854F7BB94F00B6 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/scene/collada/collada.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = collada.cpp; path = src/scene/collada/collada.cpp; sourceTree = SOURCE_ROOT; };
+		36A33E94CEBE463090BAF6E3 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/deps/glfw/src/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CGL/deps/glfw/src/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		3AA2814A872D44A6A347368D /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/util/random_util.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = random_util.h; path = src/util/random_util.h; sourceTree = SOURCE_ROOT; };
+		3BD9887F864A4ADAAFF106E0 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/src/viewer.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = viewer.cpp; path = CGL/src/viewer.cpp; sourceTree = SOURCE_ROOT; };
+		3D821C62095E416192795483 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/scene/gl_scene/material.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = material.h; path = src/scene/gl_scene/material.h; sourceTree = SOURCE_ROOT; };
+		3E40E12102184848B0F1CE9C /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/scene/gl_scene/mesh_view.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = mesh_view.h; path = src/scene/gl_scene/mesh_view.h; sourceTree = SOURCE_ROOT; };
+		3F8A9BE4C0AF486494C60972 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/src/complex.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = complex.cpp; path = CGL/src/complex.cpp; sourceTree = SOURCE_ROOT; };
+		42A16029165E4D0290BB1295 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/scene/collada/material_info.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = material_info.cpp; path = src/scene/collada/material_info.cpp; sourceTree = SOURCE_ROOT; };
+		44A74CA2AAC94811BADBBD40 /* CGL */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libCGL.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		45C38ADF47D3472F825597EF /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/scene/collada/polymesh_info.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = polymesh_info.cpp; path = src/scene/collada/polymesh_info.cpp; sourceTree = SOURCE_ROOT; };
+		45CA3C52250C45BF9BA8F00E /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/scene/gl_scene/spot_light.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = spot_light.h; path = src/scene/gl_scene/spot_light.h; sourceTree = SOURCE_ROOT; };
+		46035AECE6DF4B2DB8CF2ECA /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/scene/gl_scene/ambient_light.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ambient_light.h; path = src/scene/gl_scene/ambient_light.h; sourceTree = SOURCE_ROOT; };
+		484C12F5BB714613A60FC036 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/scene/triangle.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = triangle.h; path = src/scene/triangle.h; sourceTree = SOURCE_ROOT; };
+		4993A46C68654EFBB06B5126 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/scene/gl_scene/environment_light.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = environment_light.h; path = src/scene/gl_scene/environment_light.h; sourceTree = SOURCE_ROOT; };
+		4BC2CFB9C5474B82A2D5F158 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/deps/glfw/src/osmesa_context.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = osmesa_context.h; path = CGL/deps/glfw/src/osmesa_context.h; sourceTree = SOURCE_ROOT; };
+		4F5FE89B36D14EA4A1F5D6EF /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/deps/glfw/src/cocoa_monitor.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = cocoa_monitor.m; path = CGL/deps/glfw/src/cocoa_monitor.m; sourceTree = SOURCE_ROOT; };
+		531CEB71954540758E11518C /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/deps/glfw/src/posix_thread.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = posix_thread.h; path = CGL/deps/glfw/src/posix_thread.h; sourceTree = SOURCE_ROOT; };
+		56425FE0A9914C7EA8C83258 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/deps/glfw/src/posix_thread.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = posix_thread.c; path = CGL/deps/glfw/src/posix_thread.c; sourceTree = SOURCE_ROOT; };
+		575625BBABF943C78A553CFB /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/scene/gl_scene/point_light.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = point_light.h; path = src/scene/gl_scene/point_light.h; sourceTree = SOURCE_ROOT; };
+		59056F07CA05458290D2B2C8 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/deps/glfw/src/cocoa_time.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = cocoa_time.c; path = CGL/deps/glfw/src/cocoa_time.c; sourceTree = SOURCE_ROOT; };
+		5E24AB04CB034E72BAC91680 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/application/renderer.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = renderer.h; path = src/application/renderer.h; sourceTree = SOURCE_ROOT; };
+		627E7BD3A95E4BC8B91B40AF /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/application/meshEdit.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = meshEdit.h; path = src/application/meshEdit.h; sourceTree = SOURCE_ROOT; };
+		634009F042E4424E807BAA80 /* pathtracer */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = pathtracer; sourceTree = BUILT_PRODUCTS_DIR; };
+		65E8D3CC79364BB2A73F4525 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/scene/collada/camera_info.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = camera_info.h; path = src/scene/collada/camera_info.h; sourceTree = SOURCE_ROOT; };
+		6830F565E3604AC489381306 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/deps/glfw/src/window.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = window.c; path = CGL/deps/glfw/src/window.c; sourceTree = SOURCE_ROOT; };
+		68490E3D5FD9419A9963B892 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/deps/glfw/src/egl_context.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = egl_context.c; path = CGL/deps/glfw/src/egl_context.c; sourceTree = SOURCE_ROOT; };
+		6898F330F409491B82C92936 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/scene/gl_scene/draw_style.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = draw_style.h; path = src/scene/gl_scene/draw_style.h; sourceTree = SOURCE_ROOT; };
+		695EE330D59B49088E2F94FC /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/scene/gl_scene/sphere.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = sphere.h; path = src/scene/gl_scene/sphere.h; sourceTree = SOURCE_ROOT; };
+		6D1D3F7246464A0BBBB84471 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/scene/collada/material_info.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = material_info.h; path = src/scene/collada/material_info.h; sourceTree = SOURCE_ROOT; };
+		72FEE4DF1C954B6D85D90C6D /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/scene/bbox.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = bbox.h; path = src/scene/bbox.h; sourceTree = SOURCE_ROOT; };
+		76BA8D7FC33441458177B3C1 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/deps/glfw/src/cocoa_joystick.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = cocoa_joystick.h; path = CGL/deps/glfw/src/cocoa_joystick.h; sourceTree = SOURCE_ROOT; };
+		78FBEC0000E1475F86A59486 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/scene/gl_scene/directional_light.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = directional_light.h; path = src/scene/gl_scene/directional_light.h; sourceTree = SOURCE_ROOT; };
+		7ADBF2B81A06410BBB065576 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/scene/collada/sphere_info.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = sphere_info.h; path = src/scene/collada/sphere_info.h; sourceTree = SOURCE_ROOT; };
+		7EA57E29EE2542969A3CD883 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/deps/glfw/src/input.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = input.c; path = CGL/deps/glfw/src/input.c; sourceTree = SOURCE_ROOT; };
+		802E473C8F2F470E948A0F48 /* glfw */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libglfw3.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		817B90FDE5E04E4880C79ED6 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/scene/collada/camera_info.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = camera_info.cpp; path = src/scene/collada/camera_info.cpp; sourceTree = SOURCE_ROOT; };
+		81F51D0094EE400FBF11BB77 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/scene/gl_scene/mesh.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = mesh.cpp; path = src/scene/gl_scene/mesh.cpp; sourceTree = SOURCE_ROOT; };
+		8344607DD99D465ABDEDA293 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/scene/gl_scene/mesh.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = mesh.h; path = src/scene/gl_scene/mesh.h; sourceTree = SOURCE_ROOT; };
+		85FB9ACFA1A44DD7A6E93719 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/src/vector2D.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = vector2D.cpp; path = CGL/src/vector2D.cpp; sourceTree = SOURCE_ROOT; };
+		8623F456C4D1452F99C499A6 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/deps/glfw/src/vulkan.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = vulkan.c; path = CGL/deps/glfw/src/vulkan.c; sourceTree = SOURCE_ROOT; };
+		8701727E82E14B9182544190 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/pathtracer/sampler.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = sampler.cpp; path = src/pathtracer/sampler.cpp; sourceTree = SOURCE_ROOT; };
+		8831C6C9C40F4F5A9E5E00FD /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/scene/light.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = light.h; path = src/scene/light.h; sourceTree = SOURCE_ROOT; };
+		89071C5617F84138B42E5562 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/util/work_queue.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = work_queue.h; path = src/util/work_queue.h; sourceTree = SOURCE_ROOT; };
+		8B9D7E253D714E5D8C3A9CE2 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/pathtracer/ray.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ray.h; path = src/pathtracer/ray.h; sourceTree = SOURCE_ROOT; };
+		8D95E5E46FF34EDCAC4EF5B2 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/application/meshEdit.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = meshEdit.cpp; path = src/application/meshEdit.cpp; sourceTree = SOURCE_ROOT; };
+		8E060DA85F5243E0AE087708 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/pathtracer/camera.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = camera.h; path = src/pathtracer/camera.h; sourceTree = SOURCE_ROOT; };
+		8F5D508316754FABB65A7378 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/deps/glfw/src/cocoa_platform.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = cocoa_platform.h; path = CGL/deps/glfw/src/cocoa_platform.h; sourceTree = SOURCE_ROOT; };
+		90A3796EC3D9496B90355348 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/src/matrix4x4.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = matrix4x4.cpp; path = CGL/src/matrix4x4.cpp; sourceTree = SOURCE_ROOT; };
+		940FC37601F84055A2130B0D /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/deps/glfw/src/egl_context.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = egl_context.h; path = CGL/deps/glfw/src/egl_context.h; sourceTree = SOURCE_ROOT; };
+		964D5A568EFA4064B76F2660 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		97520116E3D6476CA1571F1F /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/scene/collada/light_info.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = light_info.h; path = src/scene/collada/light_info.h; sourceTree = SOURCE_ROOT; };
+		9911F1D3B99447E69671DF10 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/pathtracer/bsdf.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = bsdf.h; path = src/pathtracer/bsdf.h; sourceTree = SOURCE_ROOT; };
+		99542362FE6D4A398BF6CC50 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/pathtracer/intersection.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = intersection.h; path = src/pathtracer/intersection.h; sourceTree = SOURCE_ROOT; };
+		9A3C97B57DEE471D89BE7858 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/util/mutablePriorityQueue.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = mutablePriorityQueue.h; path = src/util/mutablePriorityQueue.h; sourceTree = SOURCE_ROOT; };
+		9B8F2A2085B14FE9825F5BFD /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/deps/glfw/src/cocoa_window.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = cocoa_window.m; path = CGL/deps/glfw/src/cocoa_window.m; sourceTree = SOURCE_ROOT; };
+		9CD309C9D4D84EBD99E4D507 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/scene/gl_scene/sphere.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = sphere.cpp; path = src/scene/gl_scene/sphere.cpp; sourceTree = SOURCE_ROOT; };
+		A01326CF5B79462884708992 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/util/image.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = image.h; path = src/util/image.h; sourceTree = SOURCE_ROOT; };
+		A2059E836B24400DB0527463 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/src/osdtext.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = osdtext.cpp; path = CGL/src/osdtext.cpp; sourceTree = SOURCE_ROOT; };
+		A297EACA64A648B1B87D7AEC /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/scene/sphere.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = sphere.h; path = src/scene/sphere.h; sourceTree = SOURCE_ROOT; };
+		A3BEECE835FA4CB28DDB841F /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/pathtracer/pathtracer.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = pathtracer.h; path = src/pathtracer/pathtracer.h; sourceTree = SOURCE_ROOT; };
+		A56F512C0C8A412988614480 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/scene/bvh.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = bvh.h; path = src/scene/bvh.h; sourceTree = SOURCE_ROOT; };
+		A77A08C978C041EEAC9692CD /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/xcode/CGL/deps/glfw/src/glfw_config.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = glfw_config.h; path = xcode/CGL/deps/glfw/src/glfw_config.h; sourceTree = SOURCE_ROOT; };
+		AE9640A35C184BFAAF75F6D1 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/scene/primitive.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = primitive.h; path = src/scene/primitive.h; sourceTree = SOURCE_ROOT; };
+		AEDEFEFD18EA419EA372BD72 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/src/spectrum.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = spectrum.cpp; path = CGL/src/spectrum.cpp; sourceTree = SOURCE_ROOT; };
+		B2BE2E9539ED41039BE2C935 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/src/path.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = path.cpp; path = CGL/src/path.cpp; sourceTree = SOURCE_ROOT; };
+		B815273EE16244E8BA2838B4 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/util/lodepng.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = lodepng.h; path = src/util/lodepng.h; sourceTree = SOURCE_ROOT; };
+		BBFEDC2943D240E58C911FCD /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/scene/environment_light.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = environment_light.h; path = src/scene/environment_light.h; sourceTree = SOURCE_ROOT; };
+		BDDFDA4E790C4D54914789A6 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/deps/glfw/include/GLFW/glfw3native.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = glfw3native.h; path = CGL/deps/glfw/include/GLFW/glfw3native.h; sourceTree = SOURCE_ROOT; };
+		C0AE84864EE74577B8E5C3B7 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/pathtracer/advanced_bsdf.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = advanced_bsdf.cpp; path = src/pathtracer/advanced_bsdf.cpp; sourceTree = SOURCE_ROOT; };
+		C34B164F469943C197CD45D8 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/deps/glfw/src/cocoa_init.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = cocoa_init.m; path = CGL/deps/glfw/src/cocoa_init.m; sourceTree = SOURCE_ROOT; };
+		C9BFDFA55D3049C4970FFB4C /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/src/vector4D.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = vector4D.cpp; path = CGL/src/vector4D.cpp; sourceTree = SOURCE_ROOT; };
+		CA45FF09BFF7463BA5DA837A /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/scene/collada/collada_info.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = collada_info.h; path = src/scene/collada/collada_info.h; sourceTree = SOURCE_ROOT; };
+		CA61C5365D3A445FAAE0EE84 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/application/main.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = main.cpp; path = src/application/main.cpp; sourceTree = SOURCE_ROOT; };
+		CD6D4825B644436FAE2D2B89 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/scene/scene.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = scene.h; path = src/scene/scene.h; sourceTree = SOURCE_ROOT; };
+		CE930A30559F423CBE254DFB /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/pathtracer/raytraced_renderer.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = raytraced_renderer.cpp; path = src/pathtracer/raytraced_renderer.cpp; sourceTree = SOURCE_ROOT; };
+		D3068592AB9842B9AAC942C0 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/deps/glfw/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CGL/deps/glfw/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		D506B4AF314F4F189A6E5EE0 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/util/sphere_drawing.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = sphere_drawing.h; path = src/util/sphere_drawing.h; sourceTree = SOURCE_ROOT; };
+		D8D6D7E82CAF4EA2A6F16C4F /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/scene/environment_light.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = environment_light.cpp; path = src/scene/environment_light.cpp; sourceTree = SOURCE_ROOT; };
+		D9D3D649CB204CF4AB914F9E /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/src/lodepng.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = lodepng.cpp; path = CGL/src/lodepng.cpp; sourceTree = SOURCE_ROOT; };
+		DAC2EF625A2A4694BE8D8A46 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/scene/collada/light_info.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = light_info.cpp; path = src/scene/collada/light_info.cpp; sourceTree = SOURCE_ROOT; };
+		DC3C604ABBD34CCB8B04EC1B /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/deps/glfw/src/nsgl_context.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = nsgl_context.m; path = CGL/deps/glfw/src/nsgl_context.m; sourceTree = SOURCE_ROOT; };
+		DCF3975073CE43A78071593E /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/deps/glfw/src/mappings.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = mappings.h; path = CGL/deps/glfw/src/mappings.h; sourceTree = SOURCE_ROOT; };
+		DE2F87604D434827840AF8C8 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/scene/collada/sphere_info.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = sphere_info.cpp; path = src/scene/collada/sphere_info.cpp; sourceTree = SOURCE_ROOT; };
+		DFE007091B8A4D45B8FCD5CC /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/deps/glfw/src/context.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = context.c; path = CGL/deps/glfw/src/context.c; sourceTree = SOURCE_ROOT; };
+		E24AD54474B3450BACBD15E2 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/scene/aggregate.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = aggregate.h; path = src/scene/aggregate.h; sourceTree = SOURCE_ROOT; };
+		E2922307A3B944E8B1BF3858 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/application/application.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = application.h; path = src/application/application.h; sourceTree = SOURCE_ROOT; };
+		E31FACB3DF914FE38E9B6984 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/src/osdfont.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = osdfont.cpp; path = CGL/src/osdfont.cpp; sourceTree = SOURCE_ROOT; };
+		E820DD49F0164213B6480F19 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/scene/object.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = object.h; path = src/scene/object.h; sourceTree = SOURCE_ROOT; };
+		E9ED7FEAB7A743B0A9ED9034 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/scene/gl_scene/scene.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = scene.h; path = src/scene/gl_scene/scene.h; sourceTree = SOURCE_ROOT; };
+		EC5402269B9B46F388517776 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/deps/glew/src/glew.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = glew.c; path = CGL/deps/glew/src/glew.c; sourceTree = SOURCE_ROOT; };
+		EDCE05E96D2B469CB98A0577 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/util/halfEdgeMesh.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = halfEdgeMesh.cpp; path = src/util/halfEdgeMesh.cpp; sourceTree = SOURCE_ROOT; };
+		F2B321D8E54E42A49AD3D606 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/scene/collada/polymesh_info.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = polymesh_info.h; path = src/scene/collada/polymesh_info.h; sourceTree = SOURCE_ROOT; };
+		F327D686751A443F8011D657 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/scene/gl_scene/scene.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = scene.cpp; path = src/scene/gl_scene/scene.cpp; sourceTree = SOURCE_ROOT; };
+		F6972F5FF1E640F4849DDB30 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/deps/glfw/src/monitor.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = monitor.c; path = CGL/deps/glfw/src/monitor.c; sourceTree = SOURCE_ROOT; };
+		FF864452D0A1406D83B8013A /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/deps/glfw/src/cocoa_joystick.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = cocoa_joystick.m; path = CGL/deps/glfw/src/cocoa_joystick.m; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		0BA529882E1945E6B9F34144 /* Header Files */ = {
+			isa = PBXGroup;
+			children = (
+				06BEF1330A234787BA5A6834 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/deps/glfw/include/GLFW/glfw3.h */,
+				BDDFDA4E790C4D54914789A6 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/deps/glfw/include/GLFW/glfw3native.h */,
+				76BA8D7FC33441458177B3C1 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/deps/glfw/src/cocoa_joystick.h */,
+				8F5D508316754FABB65A7378 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/deps/glfw/src/cocoa_platform.h */,
+				940FC37601F84055A2130B0D /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/deps/glfw/src/egl_context.h */,
+				00A38F1E96014D689690652E /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/deps/glfw/src/internal.h */,
+				DCF3975073CE43A78071593E /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/deps/glfw/src/mappings.h */,
+				1411FC8DD6544DCC93521FF7 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/deps/glfw/src/nsgl_context.h */,
+				4BC2CFB9C5474B82A2D5F158 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/deps/glfw/src/osmesa_context.h */,
+				531CEB71954540758E11518C /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/deps/glfw/src/posix_thread.h */,
+				A77A08C978C041EEAC9692CD /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/xcode/CGL/deps/glfw/src/glfw_config.h */,
+			);
+			name = "Header Files";
+			sourceTree = "<group>";
+		};
+		19CF838693CE4054BCFFA971 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				EC5402269B9B46F388517776 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/deps/glew/src/glew.c */,
+				15E5D3B325824B558A593B5B /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/deps/glew/src/glewinfo.c */,
+				29A2CDFF192D42D08725EC04 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/deps/glew/src/visualinfo.c */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		23FE5B5AE9744F7BB2294E0E /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				C34B164F469943C197CD45D8 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/deps/glfw/src/cocoa_init.m */,
+				FF864452D0A1406D83B8013A /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/deps/glfw/src/cocoa_joystick.m */,
+				4F5FE89B36D14EA4A1F5D6EF /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/deps/glfw/src/cocoa_monitor.m */,
+				59056F07CA05458290D2B2C8 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/deps/glfw/src/cocoa_time.c */,
+				9B8F2A2085B14FE9825F5BFD /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/deps/glfw/src/cocoa_window.m */,
+				DFE007091B8A4D45B8FCD5CC /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/deps/glfw/src/context.c */,
+				68490E3D5FD9419A9963B892 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/deps/glfw/src/egl_context.c */,
+				081B2756473146528D4DFBA8 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/deps/glfw/src/init.c */,
+				7EA57E29EE2542969A3CD883 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/deps/glfw/src/input.c */,
+				F6972F5FF1E640F4849DDB30 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/deps/glfw/src/monitor.c */,
+				DC3C604ABBD34CCB8B04EC1B /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/deps/glfw/src/nsgl_context.m */,
+				0A99199DBD404527A379ECC1 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/deps/glfw/src/osmesa_context.c */,
+				56425FE0A9914C7EA8C83258 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/deps/glfw/src/posix_thread.c */,
+				8623F456C4D1452F99C499A6 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/deps/glfw/src/vulkan.c */,
+				6830F565E3604AC489381306 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/deps/glfw/src/window.c */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		270A2CEE31E040D18CABB582 /* glfw */ = {
+			isa = PBXGroup;
+			children = (
+				0BA529882E1945E6B9F34144 /* Header Files */,
+				23FE5B5AE9744F7BB2294E0E /* Source Files */,
+				36A33E94CEBE463090BAF6E3 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/deps/glfw/src/CMakeLists.txt */,
+			);
+			name = glfw;
+			sourceTree = "<group>";
+		};
+		4C2CF41521804475BFD4ACD5 /* uninstall */ = {
+			isa = PBXGroup;
+			children = (
+				7AA5BD70AE984121AA2DA0DF /* CMake Rules */,
+				D3068592AB9842B9AAC942C0 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/deps/glfw/CMakeLists.txt */,
+			);
+			name = uninstall;
+			sourceTree = "<group>";
+		};
+		57530E7F04CE4D0D9E9CB1D9 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				2A295AC881804F66A3662286 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/src/base64.cpp */,
+				0D6FA7077B9440A5B3207665 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/src/color.cpp */,
+				3F8A9BE4C0AF486494C60972 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/src/complex.cpp */,
+				D9D3D649CB204CF4AB914F9E /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/src/lodepng.cpp */,
+				0F27CFFF8DD741A3AB22A499 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/src/matrix3x3.cpp */,
+				90A3796EC3D9496B90355348 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/src/matrix4x4.cpp */,
+				E31FACB3DF914FE38E9B6984 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/src/osdfont.cpp */,
+				A2059E836B24400DB0527463 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/src/osdtext.cpp */,
+				B2BE2E9539ED41039BE2C935 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/src/path.cpp */,
+				076EECC2BB944C9A918693DA /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/src/quaternion.cpp */,
+				AEDEFEFD18EA419EA372BD72 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/src/spectrum.cpp */,
+				0975CB87AD4E4CDC8DAFD27C /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/src/tinyxml2.cpp */,
+				85FB9ACFA1A44DD7A6E93719 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/src/vector2D.cpp */,
+				28A8836D232F4A2DA7D28870 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/src/vector3D.cpp */,
+				C9BFDFA55D3049C4970FFB4C /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/src/vector4D.cpp */,
+				3BD9887F864A4ADAAFF106E0 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/src/viewer.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		5BE0FC7A1BEB4DF0A2239E74 /* CGL */ = {
+			isa = PBXGroup;
+			children = (
+				57530E7F04CE4D0D9E9CB1D9 /* Source Files */,
+				1284CC18B32A44149B337271 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/CMakeLists.txt */,
+			);
+			name = CGL;
+			sourceTree = "<group>";
+		};
+		7AA5BD70AE984121AA2DA0DF /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		837A21BBEE9B4A8E87340F0B /* glew */ = {
+			isa = PBXGroup;
+			children = (
+				19CF838693CE4054BCFFA971 /* Source Files */,
+				0A0FC1696688408EB5DFEA11 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/deps/glew/CMakeLists.txt */,
+			);
+			name = glew;
+			sourceTree = "<group>";
+		};
+		83D1B1B75AF1498090F01D5A = {
+			isa = PBXGroup;
+			children = (
+				C1DF59549C3B435D8FFA335B /* pathtracer */,
+				DBC4F022A35E44D398E9975B /* ALL_BUILD */,
+				5BE0FC7A1BEB4DF0A2239E74 /* CGL */,
+				837A21BBEE9B4A8E87340F0B /* glew */,
+				F32D99A4A2AB4281AA9411DC /* GLFW3 */,
+				A2B4217DEF3149E4BC1CAC08 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A2B4217DEF3149E4BC1CAC08 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				44A74CA2AAC94811BADBBD40 /* CGL */,
+				0E191F4D39B24B62885E2682 /* glew */,
+				802E473C8F2F470E948A0F48 /* glfw */,
+				634009F042E4424E807BAA80 /* pathtracer */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B72DC05D0AEF4B07A75D4FE8 /* Header Files */ = {
+			isa = PBXGroup;
+			children = (
+				E2922307A3B944E8B1BF3858 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/application/application.h */,
+				627E7BD3A95E4BC8B91B40AF /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/application/meshEdit.h */,
+				5E24AB04CB034E72BAC91680 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/application/renderer.h */,
+				9911F1D3B99447E69671DF10 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/pathtracer/bsdf.h */,
+				8E060DA85F5243E0AE087708 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/pathtracer/camera.h */,
+				99542362FE6D4A398BF6CC50 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/pathtracer/intersection.h */,
+				A3BEECE835FA4CB28DDB841F /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/pathtracer/pathtracer.h */,
+				8B9D7E253D714E5D8C3A9CE2 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/pathtracer/ray.h */,
+				3202EA084CFB48499BDBDA1E /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/pathtracer/raytraced_renderer.h */,
+				248DF64950CD4B158463868D /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/pathtracer/sampler.h */,
+				E24AD54474B3450BACBD15E2 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/scene/aggregate.h */,
+				72FEE4DF1C954B6D85D90C6D /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/scene/bbox.h */,
+				A56F512C0C8A412988614480 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/scene/bvh.h */,
+				65E8D3CC79364BB2A73F4525 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/scene/collada/camera_info.h */,
+				2822B82DA681469DAB32FBB4 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/scene/collada/collada.h */,
+				CA45FF09BFF7463BA5DA837A /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/scene/collada/collada_info.h */,
+				97520116E3D6476CA1571F1F /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/scene/collada/light_info.h */,
+				6D1D3F7246464A0BBBB84471 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/scene/collada/material_info.h */,
+				F2B321D8E54E42A49AD3D606 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/scene/collada/polymesh_info.h */,
+				7ADBF2B81A06410BBB065576 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/scene/collada/sphere_info.h */,
+				BBFEDC2943D240E58C911FCD /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/scene/environment_light.h */,
+				46035AECE6DF4B2DB8CF2ECA /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/scene/gl_scene/ambient_light.h */,
+				2EE906DB613D4F7488759577 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/scene/gl_scene/area_light.h */,
+				78FBEC0000E1475F86A59486 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/scene/gl_scene/directional_light.h */,
+				6898F330F409491B82C92936 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/scene/gl_scene/draw_style.h */,
+				4993A46C68654EFBB06B5126 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/scene/gl_scene/environment_light.h */,
+				3D821C62095E416192795483 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/scene/gl_scene/material.h */,
+				8344607DD99D465ABDEDA293 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/scene/gl_scene/mesh.h */,
+				3E40E12102184848B0F1CE9C /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/scene/gl_scene/mesh_view.h */,
+				575625BBABF943C78A553CFB /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/scene/gl_scene/point_light.h */,
+				E9ED7FEAB7A743B0A9ED9034 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/scene/gl_scene/scene.h */,
+				695EE330D59B49088E2F94FC /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/scene/gl_scene/sphere.h */,
+				45CA3C52250C45BF9BA8F00E /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/scene/gl_scene/spot_light.h */,
+				8831C6C9C40F4F5A9E5E00FD /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/scene/light.h */,
+				E820DD49F0164213B6480F19 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/scene/object.h */,
+				AE9640A35C184BFAAF75F6D1 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/scene/primitive.h */,
+				CD6D4825B644436FAE2D2B89 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/scene/scene.h */,
+				A297EACA64A648B1B87D7AEC /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/scene/sphere.h */,
+				484C12F5BB714613A60FC036 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/scene/triangle.h */,
+				1396BC0B9287448CB9E3DBB6 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/util/halfEdgeMesh.h */,
+				A01326CF5B79462884708992 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/util/image.h */,
+				B815273EE16244E8BA2838B4 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/util/lodepng.h */,
+				9A3C97B57DEE471D89BE7858 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/util/mutablePriorityQueue.h */,
+				3AA2814A872D44A6A347368D /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/util/random_util.h */,
+				D506B4AF314F4F189A6E5EE0 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/util/sphere_drawing.h */,
+				89071C5617F84138B42E5562 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/util/work_queue.h */,
+			);
+			name = "Header Files";
+			sourceTree = "<group>";
+		};
+		BCD398288C9545B7BCE0D1B7 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		BF2DE06A7460477E81A4453F /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				07932E923B904D139387618D /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/application/application.cpp */,
+				CA61C5365D3A445FAAE0EE84 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/application/main.cpp */,
+				8D95E5E46FF34EDCAC4EF5B2 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/application/meshEdit.cpp */,
+				C0AE84864EE74577B8E5C3B7 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/pathtracer/advanced_bsdf.cpp */,
+				1D95306AFDE041C3B2BDCFF5 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/pathtracer/camera_lens.cpp */,
+				CE930A30559F423CBE254DFB /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/pathtracer/raytraced_renderer.cpp */,
+				8701727E82E14B9182544190 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/pathtracer/sampler.cpp */,
+				817B90FDE5E04E4880C79ED6 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/scene/collada/camera_info.cpp */,
+				33DE9656BD854F7BB94F00B6 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/scene/collada/collada.cpp */,
+				DAC2EF625A2A4694BE8D8A46 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/scene/collada/light_info.cpp */,
+				42A16029165E4D0290BB1295 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/scene/collada/material_info.cpp */,
+				45C38ADF47D3472F825597EF /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/scene/collada/polymesh_info.cpp */,
+				DE2F87604D434827840AF8C8 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/scene/collada/sphere_info.cpp */,
+				D8D6D7E82CAF4EA2A6F16C4F /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/scene/environment_light.cpp */,
+				81F51D0094EE400FBF11BB77 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/scene/gl_scene/mesh.cpp */,
+				F327D686751A443F8011D657 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/scene/gl_scene/scene.cpp */,
+				9CD309C9D4D84EBD99E4D507 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/scene/gl_scene/sphere.cpp */,
+				06084DED70F241F2BA4044C1 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/scene/object.cpp */,
+				EDCE05E96D2B469CB98A0577 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/util/halfEdgeMesh.cpp */,
+				2B29366887034083BAAA5A62 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/util/lodepng.cpp */,
+				205FD726A83E47C3B7BD95D8 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/util/sphere_drawing.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		C1DF59549C3B435D8FFA335B /* pathtracer */ = {
+			isa = PBXGroup;
+			children = (
+				BF2DE06A7460477E81A4453F /* Source Files */,
+				B72DC05D0AEF4B07A75D4FE8 /* Header Files */,
+				964D5A568EFA4064B76F2660 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CMakeLists.txt */,
+			);
+			name = pathtracer;
+			sourceTree = "<group>";
+		};
+		DBC4F022A35E44D398E9975B /* ALL_BUILD */ = {
+			isa = PBXGroup;
+			children = (
+				BCD398288C9545B7BCE0D1B7 /* CMake Rules */,
+				2A3C80EC577C4CA9A2F78525 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CMakeLists.txt */,
+			);
+			name = ALL_BUILD;
+			sourceTree = "<group>";
+		};
+		F32D99A4A2AB4281AA9411DC /* GLFW3 */ = {
+			isa = PBXGroup;
+			children = (
+				4C2CF41521804475BFD4ACD5 /* uninstall */,
+				270A2CEE31E040D18CABB582 /* glfw */,
+			);
+			name = GLFW3;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		09C843529CFD4F10BC2A2A4B /* glfw */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0FC37A76F6DC424D8A42459E /* Build configuration list for PBXNativeTarget "glfw" */;
+			buildPhases = (
+				C97F5E844DB445D9AFD6CA3B /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = glfw;
+			productName = glfw;
+			productReference = 802E473C8F2F470E948A0F48 /* glfw */;
+			productType = "com.apple.product-type.library.static";
+		};
+		5851918D80E348548B6BEB2E /* CGL */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9D16F024BC40400790DAD357 /* Build configuration list for PBXNativeTarget "CGL" */;
+			buildPhases = (
+				9D9160B10C3640AF960CBE37 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DD18F5EF93D94443B3495CD3 /* PBXTargetDependency */,
+				8569B260F1C04D99AFA3FD28 /* PBXTargetDependency */,
+			);
+			name = CGL;
+			productName = CGL;
+			productReference = 44A74CA2AAC94811BADBBD40 /* CGL */;
+			productType = "com.apple.product-type.library.static";
+		};
+		A28190BFAD134F0C9BB516CD /* glew */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5D724AA98FDD4304B4D30E23 /* Build configuration list for PBXNativeTarget "glew" */;
+			buildPhases = (
+				000ECA21B3B9439188A78E1B /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = glew;
+			productName = glew;
+			productReference = 0E191F4D39B24B62885E2682 /* glew */;
+			productType = "com.apple.product-type.library.static";
+		};
+		A4A86342ED94471FAEEB089D /* pathtracer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 675BA4F97C2F4E9684E70368 /* Build configuration list for PBXNativeTarget "pathtracer" */;
+			buildPhases = (
+				1A9A81B9D0024246BD642F20 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B36CFD7C38204CF9B1AE968D /* PBXTargetDependency */,
+				F88DFE8B82F446DCB96A7CB8 /* PBXTargetDependency */,
+				4277FE056644402FA61CF4E1 /* PBXTargetDependency */,
+				4CD70488996F4D09BA0870B3 /* PBXTargetDependency */,
+			);
+			name = pathtracer;
+			productName = pathtracer;
+			productReference = 634009F042E4424E807BAA80 /* pathtracer */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		85E16696156B40ECA1BE1315 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1130;
+			};
+			buildConfigurationList = 506F43C1598A40D197562DE9 /* Build configuration list for PBXProject "Assignment3" */;
+			buildSettings = {
+			};
+			buildStyles = (
+				5F65629BC0844622B850C742 /* Debug */,
+				BC7D35F51F7E4795B03B144E /* Release */,
+				F709E715D8CA4D708DED1269 /* MinSizeRel */,
+				B0DEAAA26F6644239064ADA6 /* RelWithDebInfo */,
+			);
+			compatibilityVersion = "Xcode 3.2";
+			hasScannedForEncodings = 0;
+			mainGroup = 83D1B1B75AF1498090F01D5A;
+			projectDirPath = ../;
+			projectRoot = "";
+			targets = (
+				694A33C4E46E4DD6901B61E4 /* ALL_BUILD */,
+				5851918D80E348548B6BEB2E /* CGL */,
+				BBC3CAA69C5944869D8FE196 /* ZERO_CHECK */,
+				A28190BFAD134F0C9BB516CD /* glew */,
+				09C843529CFD4F10BC2A2A4B /* glfw */,
+				D83B7747D76C40F39608E7DB /* install */,
+				A4A86342ED94471FAEEB089D /* pathtracer */,
+				6685FBE237CC4E259594B836 /* uninstall */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		03F5C0F7677D44B69F2B8549 /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/xcode/CGL/deps/glfw -f /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/xcode/CGL/deps/glfw/CMakeScripts/uninstall_cmakeRulesBuildPhase.make$CONFIGURATION OBJDIR=$(basename \"$OBJECT_FILE_DIR_normal\") all";
+			showEnvVarsInLog = 0;
+		};
+		8E3E8F38ABCE4AD3BAC0D974 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		98411A9C240946179E69F984 /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/xcode -f /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/xcode/CMakeScripts/ZERO_CHECK_cmakeRulesBuildPhase.make$CONFIGURATION OBJDIR=$(basename \"$OBJECT_FILE_DIR_normal\") all";
+			showEnvVarsInLog = 0;
+		};
+		9FEA5EA50F194B88BDB72779 /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/xcode -f /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/xcode/CMakeScripts/ALL_BUILD_cmakeRulesBuildPhase.make$CONFIGURATION OBJDIR=$(basename \"$OBJECT_FILE_DIR_normal\") all";
+			showEnvVarsInLog = 0;
+		};
+		BC5F92AA946A4CD497751274 /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/xcode -f /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/xcode/CMakeScripts/install_postBuildPhase.make$CONFIGURATION OBJDIR=$(basename \"$OBJECT_FILE_DIR_normal\") all";
+			showEnvVarsInLog = 0;
+		};
+		E5E3954C7F1F4D1DBF99F19D = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		ECA700B30CD54CEB8AAAC738 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		F76EE689BDB7497B8A8E1963 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		000ECA21B3B9439188A78E1B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC179147407D4202BD5BEDBE /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/deps/glew/src/glew.c */,
+				4917B8F5B4AB4CA2B4241F32 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/deps/glew/src/glewinfo.c */,
+				F212CC99BBE545D0A55BCA18 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/deps/glew/src/visualinfo.c */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A9A81B9D0024246BD642F20 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C2C7065CC644BBD9A5C242E /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/application/application.cpp */,
+				F94CC5965BEF4A0391D47885 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/application/main.cpp */,
+				9F10F0398B844186B0FF5F3D /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/application/meshEdit.cpp */,
+				E1B940A8C43B4FFA9DB711D6 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/pathtracer/advanced_bsdf.cpp */,
+				64DB1F41089D4D4AB6F5C231 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/pathtracer/camera_lens.cpp */,
+				10C46ED870464B67BC43D8CB /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/pathtracer/raytraced_renderer.cpp */,
+				789C3BBB73EC49E6BAFB9268 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/pathtracer/sampler.cpp */,
+				F817B668315B41F5AECD907F /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/scene/collada/camera_info.cpp */,
+				0D66765807A64E98A1D54799 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/scene/collada/collada.cpp */,
+				B52DE3130B1F466DB89F4EE2 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/scene/collada/light_info.cpp */,
+				DD8F005FC58748E4BD99EA07 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/scene/collada/material_info.cpp */,
+				E53C719B3F2A4D46AA4EAFE1 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/scene/collada/polymesh_info.cpp */,
+				04534462F651482692057985 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/scene/collada/sphere_info.cpp */,
+				CCBA667A152047F88CF8F0A3 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/scene/environment_light.cpp */,
+				D007AAB93E0B4008B05F696D /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/scene/gl_scene/mesh.cpp */,
+				A6C2568EDEA043B1A98E2865 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/scene/gl_scene/scene.cpp */,
+				333CBC2017F440E6901AE909 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/scene/gl_scene/sphere.cpp */,
+				993EDD3C7EC9446E918ED6C2 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/scene/object.cpp */,
+				193FC07318F742218A075CEF /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/util/halfEdgeMesh.cpp */,
+				416EA005CEED4D78A14BDA34 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/util/lodepng.cpp */,
+				4FA11493206E45C1AE4D07EC /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src/util/sphere_drawing.cpp */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D9160B10C3640AF960CBE37 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				70A398FA353B445FB110DA2D /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/src/base64.cpp */,
+				ECCE440D7D854D808113D24E /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/src/color.cpp */,
+				E2D5F1716E2B46F9A076DAF0 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/src/complex.cpp */,
+				1263D7282B644CB8AF57BF32 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/src/lodepng.cpp */,
+				13E9372D9E76444A801C04E5 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/src/matrix3x3.cpp */,
+				F371599969CE478E87B3513B /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/src/matrix4x4.cpp */,
+				08F95335C5C74AC2BE0C3246 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/src/osdfont.cpp */,
+				A9CE5CAA899349B89AD000B9 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/src/osdtext.cpp */,
+				5654F5FDC4E640AEA00C68BD /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/src/path.cpp */,
+				6AF3C4AB935E45D6845B409D /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/src/quaternion.cpp */,
+				678EC697328748B7A758C033 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/src/spectrum.cpp */,
+				6B4770A8CDC54066AC09A8AF /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/src/tinyxml2.cpp */,
+				61A1CCC794AF492EA6BD5B7A /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/src/vector2D.cpp */,
+				8BD022667FBC435CA1F41317 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/src/vector3D.cpp */,
+				D0D5232828154D39AE3B94E1 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/src/vector4D.cpp */,
+				D633097F91044E388DEAD4E9 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/src/viewer.cpp */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C97F5E844DB445D9AFD6CA3B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F88C222F16144C94B3D0DA54 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/deps/glfw/src/cocoa_init.m */,
+				8C022530C1F34B3E8538F49D /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/deps/glfw/src/cocoa_joystick.m */,
+				53CCB45344BD4B2E9250564E /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/deps/glfw/src/cocoa_monitor.m */,
+				55EF68B5FC9F483FB78DC558 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/deps/glfw/src/cocoa_time.c */,
+				51718F8D1BB84DB5BC1EEF78 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/deps/glfw/src/cocoa_window.m */,
+				4C569FE8387F4199A43F69D4 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/deps/glfw/src/context.c */,
+				62F9C580ED204EE2AC15C5A2 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/deps/glfw/src/egl_context.c */,
+				DAE8A5A96B62416BA77F7A92 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/deps/glfw/src/init.c */,
+				A36005CB29824276BA89FF96 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/deps/glfw/src/input.c */,
+				42BD6336CD394AEF801D61CB /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/deps/glfw/src/monitor.c */,
+				7191E9E299EA4759BE301FC3 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/deps/glfw/src/nsgl_context.m */,
+				EA6AECD7D22E41EDA36ED9B6 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/deps/glfw/src/osmesa_context.c */,
+				660D599A77B24BAF9374121F /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/deps/glfw/src/posix_thread.c */,
+				C53278EFEE654FE896000A22 /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/deps/glfw/src/vulkan.c */,
+				FC210C23B01341009862564A /* /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/deps/glfw/src/window.c */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4277FE056644402FA61CF4E1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 09C843529CFD4F10BC2A2A4B /* glfw */;
+			targetProxy = 15D1E842584C48C493E010F9 /* PBXContainerItemProxy */;
+		};
+		4CD70488996F4D09BA0870B3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BBC3CAA69C5944869D8FE196 /* ZERO_CHECK */;
+			targetProxy = 5770E3A00D6948308CDC35D1 /* PBXContainerItemProxy */;
+		};
+		595C63B9F8894C208D446DC6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A28190BFAD134F0C9BB516CD /* glew */;
+			targetProxy = 4458937F2C714259ADCD6BA6 /* PBXContainerItemProxy */;
+		};
+		8569B260F1C04D99AFA3FD28 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 09C843529CFD4F10BC2A2A4B /* glfw */;
+			targetProxy = D45B68C8524D4C82B7EAD9CE /* PBXContainerItemProxy */;
+		};
+		8F2415D5829D4D85AE9E3AED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A4A86342ED94471FAEEB089D /* pathtracer */;
+			targetProxy = CD24E2B5809E4BC2AEEEB4E6 /* PBXContainerItemProxy */;
+		};
+		A438BDFA61D24AEDB5B9BC0E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BBC3CAA69C5944869D8FE196 /* ZERO_CHECK */;
+			targetProxy = 9B4490B5816140F4AA5846FB /* PBXContainerItemProxy */;
+		};
+		B36CFD7C38204CF9B1AE968D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5851918D80E348548B6BEB2E /* CGL */;
+			targetProxy = D36D4486BCEF4ACE8C0E1F43 /* PBXContainerItemProxy */;
+		};
+		DD18F5EF93D94443B3495CD3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A28190BFAD134F0C9BB516CD /* glew */;
+			targetProxy = 729169548E404754AAECF8EB /* PBXContainerItemProxy */;
+		};
+		E162A5B6476B4EFE911A54B0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 09C843529CFD4F10BC2A2A4B /* glfw */;
+			targetProxy = 5D7FE022427E431585C1EB19 /* PBXContainerItemProxy */;
+		};
+		F0C933BE57864490AA8220A4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5851918D80E348548B6BEB2E /* CGL */;
+			targetProxy = FB6431BC47864D598BA75EB0 /* PBXContainerItemProxy */;
+		};
+		F88DFE8B82F446DCB96A7CB8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A28190BFAD134F0C9BB516CD /* glew */;
+			targetProxy = E5B50B1890A94A4B855EB762 /* PBXContainerItemProxy */;
+		};
+		FD271F0B8E4C40E6A5534389 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 694A33C4E46E4DD6901B61E4 /* ALL_BUILD */;
+			targetProxy = 2090BCF2938047E5A5B2F795 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1643BBEED63B4AE99FDFBC76 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",_GLFW_USE_CONFIG_H,GLEW_STATIC);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/deps/glfw/include","/Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/deps/glfw/src","/Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/xcode/CGL/deps/glfw/src");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = "    -DNDEBUG -fPIC -Wall '-std=c99'  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = glfw3;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/xcode/CGL/deps/glfw/src";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		18513414A9F94E2FA026FB83 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/xcode";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		22C3DD2C113D48948E0BF54B /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				FRAMEWORK_SEARCH_PATHS = (/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks);
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",GLEW_STATIC);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/include","/Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/include/CGL",/Library/Frameworks/Mono.framework/Headers,/usr/local/include/freetype2,"/Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/deps/glew/include","/Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/deps/glfw/include");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = " -D__SOLUTIONS__=50 -std=c++11 -m64      -mavx2     -DNDEBUG  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = CGL;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/xcode/CGL";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		2AFAB7BC36864C62A7D0C5BF /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/xcode";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		2B8E3D1B6DB94C598E2D38B6 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk;
+				SYMROOT = "/Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/xcode/build";
+			};
+			name = RelWithDebInfo;
+		};
+		31A58A8106B14932A567F066 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				FRAMEWORK_SEARCH_PATHS = (/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks);
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src","/Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/include","/Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/deps/glew/include","/Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/deps/glfw/include","/Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/include/CGL");
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = "/Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/libs/AVX2/x64_apple";
+				LIBRARY_SEARCH_PATHS = " /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/libs/AVX2/x64_apple/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME) /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/libs/AVX2/x64_apple";
+				OTHER_CPLUSPLUSFLAGS = " -D__SOLUTIONS__=50 -std=c++11 -m64      -mavx2     -DNDEBUG  ";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -lpt31 -lpt31 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/OpenGL.framework/OpenGL.tbd /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/OpenGL.framework/OpenGL.tbd /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/xcode/CGL/Release/libCGL.a /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/OpenGL.framework/OpenGL.tbd /usr/local/lib/libfreetype.dylib /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/xcode/CGL/deps/glew/Release/libglew.a /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/xcode/CGL/deps/glfw/src/Release/libglfw3.a  -framework Cocoa -framework IOKit -framework CoreFoundation /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/OpenGL.framework/OpenGL.tbd";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = pathtracer;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/xcode";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		3316009847E3416EB0181F6D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/xcode";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		3E362E1EED454C94AE53E48A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk;
+				SYMROOT = "/Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/xcode/build";
+			};
+			name = Release;
+		};
+		40E9FC9313264DE3BD25DA1C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/xcode";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		427D0DDEBAFD4E988A7082BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				FRAMEWORK_SEARCH_PATHS = (/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks);
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src","/Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/include","/Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/deps/glew/include","/Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/deps/glfw/include","/Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/include/CGL");
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = "/Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/libs/AVX2/x64_apple";
+				LIBRARY_SEARCH_PATHS = " /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/libs/AVX2/x64_apple/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME) /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/libs/AVX2/x64_apple";
+				OTHER_CPLUSPLUSFLAGS = " -D__SOLUTIONS__=50 -std=c++11 -m64      -mavx2     ";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -lpt31 -lpt31 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/OpenGL.framework/OpenGL.tbd /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/OpenGL.framework/OpenGL.tbd /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/xcode/CGL/Debug/libCGL.a /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/OpenGL.framework/OpenGL.tbd /usr/local/lib/libfreetype.dylib /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/xcode/CGL/deps/glew/Debug/libglew.a /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/xcode/CGL/deps/glfw/src/Debug/libglfw3.a  -framework Cocoa -framework IOKit -framework CoreFoundation /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/OpenGL.framework/OpenGL.tbd";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = pathtracer;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/xcode";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		4693CD8CC13F4CF9BBD60B08 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = uninstall;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/xcode/CGL/deps/glfw";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		48195DE904A74C5DA667A44F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",_GLFW_USE_CONFIG_H,GLEW_STATIC);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/deps/glfw/include","/Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/deps/glfw/src","/Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/xcode/CGL/deps/glfw/src");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = "   -fPIC -Wall '-std=c99'  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = glfw3;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/xcode/CGL/deps/glfw/src";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		4F4611D460E947B0A1CA4448 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",GLEW_STATIC);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/deps/glew/include");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = "       -DNDEBUG  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = glew;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/xcode/CGL/deps/glew";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		52E363258A8E439FB4C798ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/xcode";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		533D650F3CEC437B8686A086 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",_GLFW_USE_CONFIG_H,GLEW_STATIC);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/deps/glfw/include","/Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/deps/glfw/src","/Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/xcode/CGL/deps/glfw/src");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = "       -DNDEBUG -fPIC -Wall '-std=c99'  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = glfw3;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/xcode/CGL/deps/glfw/src";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		53F2A1B65892495696A8C89C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/xcode";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		54670AEC433B4C228E798EC2 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk;
+				SYMROOT = "/Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/xcode/build";
+			};
+			name = MinSizeRel;
+		};
+		65090B71899D4821934B1718 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/xcode";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		668480E9DBFC45A4830F4211 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				FRAMEWORK_SEARCH_PATHS = (/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks);
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",GLEW_STATIC);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/include","/Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/include/CGL",/Library/Frameworks/Mono.framework/Headers,/usr/local/include/freetype2,"/Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/deps/glew/include","/Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/deps/glfw/include");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = " -D__SOLUTIONS__=50 -std=c++11 -m64      -mavx2     -DNDEBUG  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = CGL;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/xcode/CGL";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		7188754FCD184B818282F01B /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				FRAMEWORK_SEARCH_PATHS = (/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks);
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src","/Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/include","/Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/deps/glew/include","/Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/deps/glfw/include","/Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/include/CGL");
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = "/Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/libs/AVX2/x64_apple";
+				LIBRARY_SEARCH_PATHS = " /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/libs/AVX2/x64_apple/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME) /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/libs/AVX2/x64_apple";
+				OTHER_CPLUSPLUSFLAGS = " -D__SOLUTIONS__=50 -std=c++11 -m64      -mavx2        -DNDEBUG  ";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -lpt31 -lpt31 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/OpenGL.framework/OpenGL.tbd /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/OpenGL.framework/OpenGL.tbd /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/xcode/CGL/RelWithDebInfo/libCGL.a /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/OpenGL.framework/OpenGL.tbd /usr/local/lib/libfreetype.dylib /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/xcode/CGL/deps/glew/RelWithDebInfo/libglew.a /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/xcode/CGL/deps/glfw/src/RelWithDebInfo/libglfw3.a  -framework Cocoa -framework IOKit -framework CoreFoundation /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/OpenGL.framework/OpenGL.tbd";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = pathtracer;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/xcode";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		8026197C0ABB42ED836A03A5 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",GLEW_STATIC);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/deps/glew/include");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = "    -DNDEBUG  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = glew;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/xcode/CGL/deps/glew";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		803864CED0B44A18BE6290BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = uninstall;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/xcode/CGL/deps/glfw";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		8233D97A5C014AB198789F45 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/xcode";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		8BC15254F739418FBA4D0F30 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/xcode";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		8D7FB1765A1E489792CEBCA4 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = uninstall;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/xcode/CGL/deps/glfw";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		92FC28979F6345C698ADAF8E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk;
+				SYMROOT = "/Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/xcode/build";
+			};
+			name = Debug;
+		};
+		9EB8A43490E246FFB57C78AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",GLEW_STATIC);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/deps/glew/include");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = "    -DNDEBUG  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = glew;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/xcode/CGL/deps/glew";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		A88B20B15B1C4B7D8914ADE4 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/xcode";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		AED3DD250EC543F3899CBC22 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				FRAMEWORK_SEARCH_PATHS = (/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks);
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",GLEW_STATIC);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/include","/Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/include/CGL",/Library/Frameworks/Mono.framework/Headers,/usr/local/include/freetype2,"/Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/deps/glew/include","/Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/deps/glfw/include");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = " -D__SOLUTIONS__=50 -std=c++11 -m64      -mavx2     ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = CGL;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/xcode/CGL";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		B0079C30564B400EA37071E7 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				FRAMEWORK_SEARCH_PATHS = (/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks);
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",GLEW_STATIC);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/include","/Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/include/CGL",/Library/Frameworks/Mono.framework/Headers,/usr/local/include/freetype2,"/Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/deps/glew/include","/Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/deps/glfw/include");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = " -D__SOLUTIONS__=50 -std=c++11 -m64      -mavx2        -DNDEBUG  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = CGL;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/xcode/CGL";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		B1A114EBD8584004BEAE0CE3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",GLEW_STATIC);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/deps/glew/include");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = "    ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = glew;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/xcode/CGL/deps/glew";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		BFC67EBC7C9C494E80ACF382 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",_GLFW_USE_CONFIG_H,GLEW_STATIC);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/deps/glfw/include","/Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/deps/glfw/src","/Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/xcode/CGL/deps/glfw/src");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = "    -DNDEBUG -fPIC -Wall '-std=c99'  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = glfw3;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/xcode/CGL/deps/glfw/src";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		C68FF8313A244F9194E3B57C /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				FRAMEWORK_SEARCH_PATHS = (/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks);
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/src","/Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/include","/Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/deps/glew/include","/Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/deps/glfw/include","/Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/CGL/include/CGL");
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = "/Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/libs/AVX2/x64_apple";
+				LIBRARY_SEARCH_PATHS = " /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/libs/AVX2/x64_apple/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME) /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/libs/AVX2/x64_apple";
+				OTHER_CPLUSPLUSFLAGS = " -D__SOLUTIONS__=50 -std=c++11 -m64      -mavx2     -DNDEBUG  ";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -lpt31 -lpt31 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/OpenGL.framework/OpenGL.tbd /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/OpenGL.framework/OpenGL.tbd /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/xcode/CGL/MinSizeRel/libCGL.a /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/OpenGL.framework/OpenGL.tbd /usr/local/lib/libfreetype.dylib /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/xcode/CGL/deps/glew/MinSizeRel/libglew.a /Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/xcode/CGL/deps/glfw/src/MinSizeRel/libglfw3.a  -framework Cocoa -framework IOKit -framework CoreFoundation /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/OpenGL.framework/OpenGL.tbd";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = pathtracer;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/xcode";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		E03A9E871B3349B89C0A0128 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/xcode";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		E64018BD004D4CA6B2805E7A /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = uninstall;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/xcode/CGL/deps/glfw";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		F785D774B6D742AF8D690049 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/jamesrazo/desktop/CS184/hw3-2/p3-2-pathtracer-sp20-Hames1001/xcode";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0FC37A76F6DC424D8A42459E /* Build configuration list for PBXNativeTarget "glfw" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				48195DE904A74C5DA667A44F /* Debug */,
+				BFC67EBC7C9C494E80ACF382 /* Release */,
+				1643BBEED63B4AE99FDFBC76 /* MinSizeRel */,
+				533D650F3CEC437B8686A086 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		2EABFE771E2D4C72A4161865 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3316009847E3416EB0181F6D /* Debug */,
+				E03A9E871B3349B89C0A0128 /* Release */,
+				18513414A9F94E2FA026FB83 /* MinSizeRel */,
+				A88B20B15B1C4B7D8914ADE4 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		506F43C1598A40D197562DE9 /* Build configuration list for PBXProject "Assignment3" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				92FC28979F6345C698ADAF8E /* Debug */,
+				3E362E1EED454C94AE53E48A /* Release */,
+				54670AEC433B4C228E798EC2 /* MinSizeRel */,
+				2B8E3D1B6DB94C598E2D38B6 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		5D724AA98FDD4304B4D30E23 /* Build configuration list for PBXNativeTarget "glew" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B1A114EBD8584004BEAE0CE3 /* Debug */,
+				9EB8A43490E246FFB57C78AF /* Release */,
+				8026197C0ABB42ED836A03A5 /* MinSizeRel */,
+				4F4611D460E947B0A1CA4448 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		675BA4F97C2F4E9684E70368 /* Build configuration list for PBXNativeTarget "pathtracer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				427D0DDEBAFD4E988A7082BB /* Debug */,
+				31A58A8106B14932A567F066 /* Release */,
+				C68FF8313A244F9194E3B57C /* MinSizeRel */,
+				7188754FCD184B818282F01B /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		9D16F024BC40400790DAD357 /* Build configuration list for PBXNativeTarget "CGL" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AED3DD250EC543F3899CBC22 /* Debug */,
+				668480E9DBFC45A4830F4211 /* Release */,
+				22C3DD2C113D48948E0BF54B /* MinSizeRel */,
+				B0079C30564B400EA37071E7 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		B9BE7EBA0F10472C8F25C85B /* Build configuration list for PBXAggregateTarget "install" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F785D774B6D742AF8D690049 /* Debug */,
+				52E363258A8E439FB4C798ED /* Release */,
+				65090B71899D4821934B1718 /* MinSizeRel */,
+				2AFAB7BC36864C62A7D0C5BF /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		DD156C0FBA9545CF97C977E3 /* Build configuration list for PBXAggregateTarget "uninstall" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4693CD8CC13F4CF9BBD60B08 /* Debug */,
+				803864CED0B44A18BE6290BE /* Release */,
+				E64018BD004D4CA6B2805E7A /* MinSizeRel */,
+				8D7FB1765A1E489792CEBCA4 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		F1C63F26EB14479482BB811B /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				40E9FC9313264DE3BD25DA1C /* Debug */,
+				53F2A1B65892495696A8C89C /* Release */,
+				8BC15254F739418FBA4D0F30 /* MinSizeRel */,
+				8233D97A5C014AB198789F45 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 85E16696156B40ECA1BE1315 /* Project object */;
+}

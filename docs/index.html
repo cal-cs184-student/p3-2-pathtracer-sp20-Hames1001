@@ -9,48 +9,152 @@
       padding-left: 100px;  
     }  
   </style> 
-<title>Your Name  |  CS 184</title>
+<title>James Razo |  CS 184</title>
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
 <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
 </head>
 <body>
 <br />
 <h1 align="middle">Assignment 3: PathTracer</h1>
-    <h2 align="middle">Your Name</h2>
+    <h2 align="middle">James Razo</h2>
 
     <div class="padded">
-        <p>Use this section to write an overview of the assignment. All of the text in your write-up should be <em>in your own words</em>. If you need to add additional HTML features to this document, you can search the <a href="http://www.w3schools.com/">http://www.w3schools.com/</a> website for instructions. To edit the HTML, you can just copy and paste existing chunks and fill in the text and image file names appropriately.</p>
-        <o>The website writeup is intended to be a self-contained walkthrough of the assignment: we want this to be a piece of work which showcases your understanding of relevant concepts through both mesh images as well as written explanations about what you did to complete each part of the assignment. Try to be as clear and organized as possible when writing about your own output files or extensions to the assignment. We want to understand what you've achieved and how you've done it!</p> 
-        <p>If you are well-versed in web development, feel free to ditch this template and make a better looking page. Just make sure that you include all the components as we've laid them out here. </p>
+        <p>The main reason of global illumination is to project realistic images through importance sampling by implenting a ray tracer 
+        that captures the effects of a mirror, glass, and many other items. This causes the object to project like a mirror or glass 
+        through two implemented functions. Reflection and refraction are the main components towards creating these realistic images.
+         We sample at different locations from the light source and we trace through the ray and calculate the entering and exiting 
+     state of the ray through Snell's equations. Another part to this project was using microfacet materials by tempering with eta and 
+        k values of a .dae image. These create different conductors or in other words a wavelength to give off a certain color. Most of
+         the problems I encountered was either receiving a really bright image or completely dark image. This was caused through 
+         miscalculations on some equations or using a wrong vector that didn't apply to the BSDF. I also found it difficult 
+        understanding how some math equations caused the smoothness or roughness on an image or what caused an image to be brighter 
+        through bounce radiance and the different amount of light sampling. The overall achievement was being able to produce accurate 
+        images or replicas. 
+        </p>
 
-    <h2 align="middle">Part 1: Ray Generation and Intersection</h2>
-        <p>Describe what you did in Part 1. etc...</p>
+    <h2 align="middle">Part 1: Mirror and Glass Materials</h2>
+        <p> For this part I implemented the reflection and refraction functions to capture a ray and determine the entering and 
+        exiting state. For reflection all I had to do was invert the coordinates other than the z coordinate. For Refraction we used
+        Snell's equations and the z component to help us calculate the entering or exiting state. This was also done in spherical 
+        coordinates. As you can see below, when my max ray depth is zero there are no objects visible but the light source. This is 
+        due to there not being a bounce effect on an object. However, when we set max ray depth to one, all we retrieve are two black 
+        sphere's. All we did was used direct lighting to fill the room with color but we are not using multibounce effects to its
+        potential. We see with the images below that as we increase the max ray depth, we fully take advantage of the multibouncing 
+        effects to create brighter images. It came to my attention that the sphere on the right was extremely bright and I believe 
+        this was due by some minor miscalculation on the refraction part. The sphere on the left seems to be reflecting a lot more 
+        rather than refracting while the one on the right reflects and refracts. Which is why at max ray depth 2 and above we see the 
+        left sphere reflect everything around its environment and the right sphere refracts due to it having some glass like 
+        qualities. To produce this glass like refraction instance I used Schlick's approximation to produce a specular reflection 
+        coefficient R that determined the reflection or refraction status through a coin flip.  </p>
+        <br>
+        <p>Here is Schlick's Aproximation: </p>
+        <p align="middle"><pre align="middle">R(theta) = R_0 + (1 - R_0)(1 - cos(theta))^5</pre></p>
+        <p>Where R_0 is:</p>
+        <p align="middle"><pre align="middle">n1 = 1.0, n_2 is given -> R_0 = (n_1 - n_2)^2 / (n_1 + n_2)^2</pre></p> 
         <div align="center">
             <table style="width=100%">
                 <tr>
                     <td align="middle">
-                    <img src="images/example_image.png" width="480px" />
-                    <figcaption align="middle">Results Caption: my bunny is the bounciest bunny</figcaption>
+                    <img src="images/CBspheres_0.png" width="480px" />
+                    <figcaption align="middle">Max ray depth of 0</figcaption>
+                    <td align="middle">
+                    <img src="images/CBspheres_1.png" width="480px" />
+                    <figcaption align="middle">Max ray depth of 1</figcaption>
                 </tr>
+                <br> 
+                 <tr>
+                    <td align="middle">
+                    <img src="images/CBspheres_2.png" width="480px" />
+                    <figcaption align="middle">Max ray depth of 2</figcaption>
+                    <td align="middle">
+                    <img src="images/CBspheres_3.png" width="480px" />
+                    <figcaption align="middle">Max ray depth of 3</figcaption>
+                </tr>
+                <br> 
+                 <tr>
+                    <td align="middle">
+                    <img src="images/CBspheres_4.png" width="480px" />
+                    <figcaption align="middle">Max ray depth of 4</figcaption>
+                    <td align="middle">
+                    <img src="images/CBspheres_5.png" width="480px" />
+                    <figcaption align="middle">Max ray depth of 5</figcaption>
+                </tr>
+                <br> 
+                 <tr>
+                    <td align="middle">
+                    <img src="images/CBspheres_100.png" width="480px" />
+                    <figcaption align="middle">Max ray depth of 100</figcaption>
+                </tr>
+
             </table>
         </div>
-        <p>Here is an example of how to include a simple formula:</p>
-        <p align="middle"><pre align="middle">a^2 + b^2 = c^2</pre></p>
-        <p>or, alternatively, you can include an SVG image of a LaTex formula.</p>
-        <p>This time it's your job to copy-paste in the rest of the sections :)</p>
+        
+        <h2 align="middle">Part 2: Microfacet Material</h2>
+        <p> For this part I implemented the microfacet BRDF by using Fresnel term, shadow masking, and normal distribution function.
+        These were all connected to one another to produce the distribution of coloring for an image. Like before we sampled from the 
+        light source to generate great quality images. The normal distribution function was used to determine which half vectors
+        were to be reflected along w_i and w_o. Therefore, I used Beckmann distribution where it involves the smoothness or roughness
+        of an image. As shown below with the dragon, as alpha decreases the smoother the image is capable of being. This is because 
+        the concentration of normals are compacted(in other words glossier) rather than diffused. If the half vector h falls along 
+        this distribution then it is a part of the sample we must light. </p>
+         <br>
+         <p>Here is Beckmann's Distribution: </p>
+        <p align="middle"><pre align="middle">D(h) = e^(-tan^2(theta_h) / a^2) / (pi * a^2 * cos^4(theta_h))</pre></p>
+        <br>
+         <p>Fresnel's term in this case was used as an air-conductor to approximate the wavelength for an image. Therefore, different
+         n and k values gave off some mixed coloring form the spectrum of a certain conductor. In this case the gold we see from the 
+        dragon was a collection of n and k values. Where k is the extinction coefficient and n is the refractive index. To compute
+        Fresnel's term we used the incident ray w_i to help calculate the cos(theta) of this approximation. </p>
+        <br>
+        <p>Here is Fresnel's term: </p>
+        <p align="middle"><pre align="middle">F = (R_s + R_p) / 2</pre></p>
+        <p>Where R_s and R_p are: </p>
+        <p align="middle"><pre align="middle">R_s = ((n^2 + k^2) - 2 * n * cos(w_i) + cos^2(w_i)) / ((n^2 + k^2) + 2 * n * cos(w_i) + cos^2(w_i))<br> <br> R_p = ((n^2 + k^2) * cos^2(w_i) - 2 * n * cos(w_i) + 1) / ((n^2 + k^2) * cos^2(w_i) + 2 * n * cos(w_i) + 1)</pre></p>
+        <br>
+        <p>This completes the Microfacet BRDF to produce the overall equation of: </p>
+        <p align="middle"><pre align="middle">f = (F(w_i) * G(w_o, w_i) * D(h)) / (4 * (n * w_o) * (n * w_i)) </pre></p>
+        <p>I then used importance sampling to tie all of these terms together. We apply importance sampling over hemisphere sampling 
+        because Beckmann's Distribution samples the microfacet BRDF according to the shape produced. Therefore, when comparing the 
+        bunny pictures below we see that one is a lot more shaded than the other. This is because we are not sampling at the correct 
+        spot from the pdf. In this case we recevie the darker bunny image in comparison to the shiny shaded bunny. </p>
 
+        <div align="center">
+            <table style="width=100%">
+                <tr>
+                    <td align="middle">
+                    <img src="images/CBdragonGold_0.5.png" width="480px" />
+                    <figcaption align="middle">alpha = 0.5</figcaption>
+                    <td align="middle">
+                    <img src="images/CBdragonGold_0.25.png" width="480px" />
+                    <figcaption align="middle">alpha = 0.25</figcaption>
+                </tr>
+                <br> 
+                 <tr>
+                    <td align="middle">
+                    <img src="images/CBdragonGold_0.05.png" width="480px" />
+                    <figcaption align="middle">alpha = 0.05</figcaption>
+                    <td align="middle">
+                    <img src="images/CBdragonGold_0.005.png" width="480px" />
+                    <figcaption align="middle">alpha = 0.005</figcaption>
+                </tr>
+                <br> 
+                 <tr>
+                    <td align="middle">
+                    <img src="images/CBbunnyCopperHemisphere.png" width="480px" />
+                    <figcaption align="middle">Cosine Hemisphere Sampling</figcaption>
+                    <td align="middle">
+                    <img src="images/CBbunnyCopper.png" width="480px" />
+                    <figcaption align="middle">Importance Sampling</figcaption>
+                </tr>
+                <br> 
+                 <tr>
+                    <td align="middle">
+                    <img src="images/CBdragonCarbon.png" width="480px" />
+                    <figcaption align="middle">Color using Carbon n and k values</figcaption>
+                </tr>
 
-
-    <h2 align="middle">A Few Notes On Webpages</h2>
-        <p>Here are a few problems students have encountered in the past. You will probably encounter these problems at some point, so don't wait until right before the deadline to check that everything is working. Test your website on the instructional machines early!</p>
-        <ul>
-        <li>Your main report page should be called index.html.</li>
-        <li>Be sure to include and turn in all of the other files (such as images) that are linked in your report!</li>
-        <li>Use only <em>relative</em> paths to files, such as <pre>"./images/image.jpg"</pre>
-        Do <em>NOT</em> use absolute paths, such as <pre>"/Users/student/Desktop/image.jpg"</pre></li>
-        <li>Pay close attention to your filename extensions. Remember that on UNIX systems (such as the instructional machines), capitalization matters. <pre>.png != .jpeg != .jpg != .JPG</pre>
-        <li>Be sure to adjust the permissions on your files so that they are world readable. For more information on this please see this tutorial: <a href="http://www.grymoire.com/Unix/Permissions.html">http://www.grymoire.com/Unix/Permissions.html</a></li>
-        <li>And again, test your website on the instructional machines early!</li>
+            </table>
+        </div>
 </div>
 </body>
 </html>
