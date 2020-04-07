@@ -109,7 +109,10 @@
         <p>Here is Fresnel's term: </p>
         <p align="middle"><pre align="middle">F = (R_s + R_p) / 2</pre></p>
         <p>Where R_s and R_p are: </p>
-        <p align="middle"><pre align="middle">R_s = ((n^2 + k^2) - 2 * n * cos(w_i) + cos^2(w_i)) / ((n^2 + k^2) + 2 * n * cos(w_i) + cos^2(w_i))<br> <br> R_p = ((n^2 + k^2) * cos^2(w_i) - 2 * n * cos(w_i) + 1) / ((n^2 + k^2) * cos^2(w_i) + 2 * n * cos(w_i) + 1)</pre></p>
+        <p align="middle"><pre align="middle">R_s = ((n^2 + k^2) - 2 * n * cos(w_i) + cos^2(w_i)) / ((n^2 + k^2) + 2 * n * cos(w_i) +
+            cos^2(w_i))
+        <br> 
+        <br> R_p = ((n^2 + k^2) * cos^2(w_i) - 2 * n * cos(w_i) + 1) / ((n^2 + k^2) * cos^2(w_i) + 2 * n * cos(w_i) + 1)</pre></p>
         <br>
         <p>This completes the Microfacet BRDF to produce the overall equation of: </p>
         <p align="middle"><pre align="middle">f = (F(w_i) * G(w_o, w_i) * D(h)) / (4 * (n * w_o) * (n * w_i)) </pre></p>
